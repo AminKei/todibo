@@ -1,0 +1,52 @@
+
+.svg-icon-search-input {
+  background-color: none;
+  border: none;
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: black solid 2px;
+  color: black;
+  outline: none;
+  width: 250px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  outline: none;
+  color: #0d0c22;
+  transition: 0.3s ease;
+  border-bottom: #0d0c22 solid 2px;
+  background-color: none;
+}
+
+.input::placeholder {
+  color: #5f5f5f;
+}
+
+
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .group {
+    display: none;
+  }
+}
