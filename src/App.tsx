@@ -5,7 +5,7 @@ import AppBar from './Components/Appbar/Appbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
         <AppBar/>
         <Home/>
     </div>
