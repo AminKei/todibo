@@ -1,0 +1,18 @@
+.div-home{
+    width: 100vw;
+    height: 100vh;
+    margin-top: -7vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.img-home{
+    width: 86%;
+    z-index: 1;
+}
+.h2-text-home{
+    z-index: 2;
+    color: rgb(160, 85, 85);
+    font-size: 30px;
+    text-align: center;
+}

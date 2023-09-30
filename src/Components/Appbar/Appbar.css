@@ -14,17 +14,18 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: auto;
+  
 }
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
   justify-content: space-around;
   display: flex;
   align-items: center;
   height: 80px;
   padding-bottom: 10px;
-}
+}   
 
 .nav-container {
   display: flex;
@@ -227,6 +228,7 @@ body {
     border-top: #ececec solid 2px;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
   }
   .carticonandbadge {
     gap: 3px;
