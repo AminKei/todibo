@@ -54,7 +54,7 @@ const AppBar = () => {
               <div className="div-info">
                 <button className="button-cart">
                   <img src={cartIcon} className="icon-cart" />
-                  <h2 className="number">2</h2>
+                  <h2 className="number">5</h2>
                 </button>
                 <button className="button-account">Account</button>
               </div>
