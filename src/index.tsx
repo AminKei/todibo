@@ -4,13 +4,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
+import Home from "./Pages/Home/Home";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Login/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+          <Route path="/Login" element={<Login />} />
+          {/* <Route path="contact" element={<Contact />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

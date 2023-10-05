@@ -1,6 +1,7 @@
 import React from "react";
 import "./Appbar.css";
 import { Input } from "../Input/Input";
+import Home from "../../Pages/Home/Home";
 
 let cartIcon =
   "https://icons.veryicon.com/png/o/miscellaneous/unicons/shopping-basket-16.png";
@@ -29,7 +30,7 @@ const AppBar = () => {
               <span className="line line3"></span>
             </div>
             <div className="logo">
-              <h1>Todibo</h1>
+              <h1 onClick={()=> document.location = "/"}>Todibo</h1>
 
               <div className="menu-items2">
                 <li>
@@ -56,7 +57,7 @@ const AppBar = () => {
                   <img src={cartIcon} className="icon-cart" />
                   <h2 className="number">5</h2>
                 </button>
-                <button className="button-account">Account</button>
+                <button className="button-account" onClick={()=> document.location = "/Login"}>Account</button>
               </div>
             </div>
             <div className="logo">
@@ -72,7 +73,7 @@ const AppBar = () => {
                   <h1 className="number-cart2">0</h1>
                 </li>
                 <li>
-                  <img src={accounticon} width={36} />
+                  <img src={accounticon} onClick={()=> document.location = "/Login"} width={36} />
                 </li>
               </div>
             </div>

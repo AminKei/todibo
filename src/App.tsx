@@ -6,8 +6,8 @@ import AppBar from './Components/Appbar/Appbar';
 function App() {
   return (
     <div className="App" >
-        <AppBar/>
-        <Home/>
+        {/* <AppBar/>
+        <Home/> */}
     </div>
   );
 }

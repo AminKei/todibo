@@ -14,6 +14,7 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: auto;
+  z-index: 5;
   
 }
 
@@ -108,8 +109,8 @@ body {
 .navbar .menu-items {
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  height: 100vh;
-  width: 100%;
+  height: 90vh;
+  width: 100vw;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
@@ -117,6 +118,7 @@ body {
   padding-left: 50px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
+  background-color: #fff;
 }
 
 .navbar .menu-items li {
