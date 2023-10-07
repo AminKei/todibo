@@ -137,6 +137,7 @@ body {
   margin-left: 10vh;
   float: right;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -183,6 +184,7 @@ body {
   font-size: 14px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
 .button-cart {
   display: flex;

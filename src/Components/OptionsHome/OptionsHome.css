@@ -1,0 +1,25 @@
+.root-div-OptionsHome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12vh;
+    margin-right: 12vh;
+    margin-top: 15vh;
+}
+.div-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgb(199, 199, 199);
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.text-option{
+    color: gray;
+}
+.box-options{
+    width: 300px;
+}

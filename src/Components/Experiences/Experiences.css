@@ -1,0 +1,21 @@
+.root-div-experiences{
+    margin-left: 12vh;
+    margin-right: 12vh;
+    margin-bottom: 10vh;
+}
+.div-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-2{
+    border-left: solid 5px black;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 30px ;
+    color: gray;
+    width: 500px;
+    outline: none;
+}

@@ -1,0 +1,25 @@
+.root-brands{
+    width: 100%;
+    margin-top: 90vh;
+    align-items: center;
+    display: grid;
+    text-align: left;
+    padding: 120px;
+
+}
+
+.img-brands{
+    width: 87vw;
+    margin-top: 2vh;
+
+}
+.img-brands:hover{
+    scale: 1.1;
+    transition: all .3s;
+}
+
+@media only screen and (max-width:800px) {
+    .root-brands{
+        display: none;
+    }
+}

@@ -3,6 +3,8 @@ import ImgHome from "../../Assets/Images/imghome.png";
 import "./Home.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import Brands from "../../Components/Brands/Brands";
+import Experiences from "../../Components/Experiences/Experiences";
+import OptionsHome from "../../Components/OptionsHome/OptionsHome";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       </div>
 
       <Brands/>
+      <Experiences/>
+      <OptionsHome/>
     </>
   );
 };
