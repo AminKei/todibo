@@ -5,6 +5,8 @@ import AppBar from "../../Components/Appbar/Appbar";
 import Brands from "../../Components/Brands/Brands";
 import Experiences from "../../Components/Experiences/Experiences";
 import OptionsHome from "../../Components/OptionsHome/OptionsHome";
+import Currated from "../../Components/Currated/Currated";
+import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
 
       <Brands/>
       <Experiences/>
+      <Currated/>
+      <FeaturedProducts/>
       <OptionsHome/>
     </>
   );

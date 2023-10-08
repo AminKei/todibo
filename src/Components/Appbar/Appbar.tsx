@@ -34,7 +34,7 @@ const AppBar = () => {
 
               <div className="menu-items2">
                 <li>
-                  <a  onClick={()=> document.location = "/"} href="#">Home</a>
+                  <a   href="#">Featured Products</a>
                 </li>
                 <li>
                   <a href="#">Products</a>
