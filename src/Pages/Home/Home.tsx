@@ -7,6 +7,9 @@ import Experiences from "../../Components/Experiences/Experiences";
 import OptionsHome from "../../Components/OptionsHome/OptionsHome";
 import Currated from "../../Components/Currated/Currated";
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";
+import Limited from "../../Components/Limited/Limited";
+import { Subscribe } from "../../Components/Subscribe/Subscribe";
+import { Footer } from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -23,7 +26,10 @@ const Home = () => {
       <Experiences/>
       <Currated/>
       <FeaturedProducts/>
+      <Limited/>
+      <Subscribe/>
       <OptionsHome/>
+      <Footer/>
     </>
   );
 };

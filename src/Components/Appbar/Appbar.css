@@ -25,7 +25,6 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  padding-bottom: 10px;
 }   
 
 .nav-container {

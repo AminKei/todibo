@@ -1,0 +1,34 @@
+.div-root-Subscribe {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  margin-top: 15vh;
+  gap: 30px;
+
+}
+.div-in-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.p-Subscribe{
+    color: gray;
+}
+.input-Subscribe{
+    background-color: rgb(235, 235, 235);
+    border: rgb(202, 202, 202) solid 1px;
+    outline: none;
+    color: gray;
+    padding: 30px;
+    width: 490px;
+    border-radius: 10px;
+}
+.btn-Subscribe{
+    background-color: #313131;
+    color: white;
+    border: #252525 solid 1px;
+    padding: 30px;
+    border-radius: 10px;
+}

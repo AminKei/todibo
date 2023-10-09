@@ -1,0 +1,41 @@
+.root-div-Limited{
+    margin-left: 13vh;
+    margin-right: 13vh;    
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.div-limited{
+    background-color: #282830;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    height: 400px;
+    gap: 100px;
+}
+.info-div{
+    display: grid;
+    text-align: left;
+    float: left;
+    margin-top: 8vh;
+    margin-bottom: 7vh;
+    gap: 30px;
+}
+.img-Limited{
+    width: 40%;
+}
+.btn-limited{
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    border: white solid 2px;
+    color: #282830;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
+.text-limited{
+    color: rgb(255, 255, 255)    ;
+}
+.div-limited img {
+    border-radius: 20px 10px 0px 20px;
+}
