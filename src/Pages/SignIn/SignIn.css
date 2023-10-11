@@ -1,4 +1,4 @@
-.root-div-login{
+.root-div-SignIn{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,12 +11,12 @@
     display: grid;
     gap: 30px;
 }
-.div-img-login{
+.div-img-SignIn{
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.div-img-login * {
+.div-img-SignIn * {
     height: 700px ;
 }   
 .input-regi{
@@ -28,7 +28,7 @@
     text-align: left;
     outline: none;
 }
-.btn-login-page{
+.btn-SignIn-page{
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -40,16 +40,16 @@
     margin-top: -7vh;
 }
 @media only screen and (max-width:900px) {
-    .root-div-login{
+    .root-div-SignIn{
         display: grid;
         gap: 0;
         width: 100%;
         height: 100%;
     }
-    .div-img-login * {
+    .div-img-SignIn * {
         display: none;
     }
-    .btn-login-page{
+    .btn-SignIn-page{
         width: 100%;
     }
     .div-filds{

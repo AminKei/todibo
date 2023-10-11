@@ -39,3 +39,39 @@
 .div-limited img {
     border-radius: 20px 10px 0px 20px;
 }
+
+@media only screen and (max-width:900px) {
+    .root-div-Limited{
+        margin: 1vh;
+    }
+    .div-limited{
+        display: grid;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 5px;
+    }
+    .img-Limited{
+        width: 100%;
+        gap: 0px;
+        border-radius: 30px;
+    }
+    .info-div{
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        margin: 0;
+        float: inline-end;
+    }
+    .btn-limited{
+        width: 100%;
+    }
+    .div-limited img {
+
+        border-radius: 20px;
+    }
+    
+}

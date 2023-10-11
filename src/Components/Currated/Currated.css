@@ -40,3 +40,26 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 40vh;
 }
+@media only screen and (max-width:900px) {
+    .root-div-Currated{
+        margin: 0;
+        padding: 40px;
+    }
+    .divs-Currated{
+        display: grid;
+        gap: 50px;
+        margin: 0;
+    }
+    .img-item{
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    .text-root-currated{
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        margin-left: -2vh;
+    }
+}
