@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import SignIn from "./Pages/SignIn/SignIn";
+import ProductPage from "./Pages/ProductPage/ProductPage";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/ProductPage" element={<ProductPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

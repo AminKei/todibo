@@ -23,8 +23,7 @@ const SignIn = () => {
                 <input placeholder="*****************" type="password" className="input-regi"/>
                 <label>Confirm Password:</label>
                 <input placeholder="*****************" type="password" className="input-regi"/>
-                <p>Do you forget password? recover now!</p>
-                <button className="btn-SignIn-page">Login</button>
+                <button className="btn-SignIn-page">Sign In</button>
             </div>
             <div className="div-img-SignIn">
                 <img src={imgSignIn}/>

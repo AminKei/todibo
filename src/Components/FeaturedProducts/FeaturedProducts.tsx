@@ -18,7 +18,7 @@ const FeaturedProducts = () => {
               <h4>Autumn</h4>
               <h2>$ 120</h2>
             </div>
-            <div className="cart-div">
+            <div className="cart-div" onClick={()=> document.location = '/ProductPage'}>
               <img src={cartIcon} width={40} />
             </div>
           </div>
