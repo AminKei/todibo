@@ -1,0 +1,18 @@
+.div-root-data{
+    margin-top: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    border-bottom: gainsboro solid 2px;
+    margin-bottom: 3vh;
+}
+.textera-data{
+    color: gray;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+@media only screen and (max-width:900px){
+    .div-root-data{
+        margin: 0;
+        padding: 20px;
+    }
+}

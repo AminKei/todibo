@@ -1,0 +1,39 @@
+.root-div-RatingReviews{
+    margin-left: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20vh;
+    margin-top: 5vh;
+    border-bottom:  solid rgb(201, 201, 201) 2px;
+}
+.item-comment{
+    width: 800px;
+    padding: 50px;
+    border-left:  solid 1px rgb(192, 192, 192);
+    /* border-bottom:  solid 1px rgb(187, 187, 187); */
+    margin: 5vh;
+}
+.name-comment{
+
+}
+.text-comment{
+    color: rgb(139, 139, 139);
+    margin-top: 2vh;
+}
+.rate-comment{
+    color: rgb(71, 135, 255);
+    margin-top: 2vh;
+}
+.date-comment{
+    color: rgb(175, 175, 175);
+    margin-top: 1vh;
+}
+@media only screen and (max-width:900px){
+    .root-div-RatingReviews{
+        margin: 0;
+        padding: 20px;
+    }
+    .item-comment{
+        width: 100%;
+    }
+}
