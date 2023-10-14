@@ -9,6 +9,7 @@ const FeaturedProducts = () => {
     <div className="root-div-Featured">
       <h1>Featured Products</h1>
       <div className="div-items">
+
         <div className="item-product">
           <div className="div-img-product">
             <img src={product} className="img-pro" />
@@ -23,6 +24,7 @@ const FeaturedProducts = () => {
             </div>
           </div>
         </div>
+        
         <div className="item-product">
           <div className="div-img-product">
             <img src={product} className="img-pro" />

@@ -33,10 +33,10 @@ const AppBar = () => {
               <h1 onClick={()=> document.location = "/"}>Todibo</h1>
 
               <div className="menu-items2">
-                <li>
+                <li >
                   <a   href="#">Featured Products</a>
                 </li>
-                <li>
+                <li onClick={()=> document.location = "/AllProduct"}>
                   <a href="#">Products</a>
                 </li>
                 <li>
@@ -53,7 +53,7 @@ const AppBar = () => {
                 className="input-derespose"
               />
               <div className="div-info">
-                <button className="button-cart">
+                <button className="button-cart" onClick={()=> document.location = "/Cart"}>
                   <img src={cartIcon} className="icon-cart" />
                   <h2 className="number">5</h2>
                 </button>
@@ -62,13 +62,13 @@ const AppBar = () => {
             </div>
             <div className="logo">
               <div className="menu-items3">
-                <li>
+                <li onClick={()=> document.location = "/AllProduct"}>
                   <img src={Categoryicon} width={32} />
                 </li>
-                <li>
+                <li onClick={()=> document.location = "/"}>
                   <img src={homeicon} width={36} />
                 </li>
-                <li className="carticonandbadge">
+                <li className="carticonandbadge" onClick={()=> document.location = "/Cart"}>
                   <img width={34} src={cartIcon} />
                   <h1 className="number-cart2">0</h1>
                 </li>

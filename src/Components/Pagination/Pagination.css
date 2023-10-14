@@ -1,0 +1,27 @@
+.root-item-pagination{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    height: 100px;
+    position: static;
+}
+.item-pagination{
+    background-color: transparent;
+    border: rgb(39, 39, 39) solid 2px;
+    color: #252525;
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item-pagination:hover{
+    background-color: #222222;
+    color: #ffffff;
+}
+@media only screen and (max-width:900px) {
+    .group-pagination *{
+        padding: 10px;
+    }
+}

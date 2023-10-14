@@ -1,0 +1,119 @@
+.div-root-all-product{
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 3vh;
+}
+.div-root-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+.div-filter{
+    width: 390px;
+    height: 100%;
+    padding: 10px;
+    border: gainsboro solid 2px;
+    border-radius: 5px;
+}   
+.div-sort{
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+    border: gainsboro solid 2px;
+    border-radius: 5px;
+    margin-right: -4vh;
+}
+.root-allproduct-list{
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+    margin-left: -1vh;
+}
+.item-allpro{
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    /* display: grid; */
+}
+.item-img-pro{
+    width: 390px;
+    border-radius: 10px;
+}
+
+.dropbtn {
+    color: rgb(39, 39, 39);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: #fff solid 2px;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100% ;
+    z-index: 1;
+    border-left:  gainsboro solid 1px;
+    /* background-color: white; */
+    padding: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content h3 {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .dropdown-content h3:hover {
+     background-color: #ffffff ;
+     cursor: pointer;
+    font-size: 21px;
+    transition: all .5s;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width:900px){
+    .div-root-all-product{
+        margin: 0;
+        padding: 20px;
+    }
+    .div-filter{
+        margin: 1vh;
+    }
+    .div-sort{
+        margin: 0;
+    }
+    .item-img-pro{
+        width: 100%;
+        margin: 0;
+    }
+    .root-allproduct-list{
+        gap: 0;
+        margin: 0;  
+        flex-wrap: wrap;
+        display: flow-root;
+        margin-bottom: 14vh;
+    }
+    .item-allpro{
+        width: 100%;
+    }
+    .dropdown-content{
+        background-color: white;
+    }
+}
