@@ -2,6 +2,7 @@ import React from "react";
 import "./Appbar.css";
 import { Input } from "../Input/Input";
 import Home from "../../Pages/Home/Home";
+import { Button } from "../Button/Button";
 
 let cartIcon =
   "https://icons.veryicon.com/png/o/miscellaneous/unicons/shopping-basket-16.png";
@@ -30,20 +31,20 @@ const AppBar = () => {
               <span className="line line3"></span>
             </div>
             <div className="logo">
-              <h1 onClick={()=> document.location = "/"}>Todibo</h1>
+              <h1 onClick={() => (document.location = "/")}>Todibo</h1>
 
               <div className="menu-items2">
-                <li >
-                  <a   href="#">Featured Products</a>
+                <li>
+                  <a href="#Featured">Featured Products</a>
                 </li>
-                <li onClick={()=> document.location = "/AllProduct"}>
+                <li onClick={() => (document.location = "/AllProduct")}>
                   <a href="#">Products</a>
                 </li>
                 <li>
-                  <a href="#">Elements</a>
+                  <a href="#Element">Elements</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
                 </li>
               </div>
               <Input
@@ -53,27 +54,48 @@ const AppBar = () => {
                 className="input-derespose"
               />
               <div className="div-info">
-                <button className="button-cart" onClick={()=> document.location = "/Cart"}>
+                <button
+                  className="button-cart"
+                  onClick={() => (document.location = "/Cart")}
+                >
                   <img src={cartIcon} className="icon-cart" />
                   <h2 className="number">5</h2>
                 </button>
-                <button className="button-account" onClick={()=> document.location = "/Login"}>Account</button>
+                <Button
+                  bgColor="#252525"
+                  border="white solid 1px "
+                  color="white"
+                  height={60}
+                  width={160}
+                  radius="10px"
+                  className="button-account"
+                  onClick={() => (document.location = "/Login")}
+                >
+                  Account
+                </Button>
               </div>
             </div>
             <div className="logo">
               <div className="menu-items3">
-                <li onClick={()=> document.location = "/AllProduct"}>
+                <li onClick={() => (document.location = "/AllProduct")}>
                   <img src={Categoryicon} width={32} />
                 </li>
-                <li onClick={()=> document.location = "/"}>
+                <li onClick={() => (document.location = "/")}>
                   <img src={homeicon} width={36} />
                 </li>
-                <li className="carticonandbadge" onClick={()=> document.location = "/Cart"}>
+                <li
+                  className="carticonandbadge"
+                  onClick={() => (document.location = "/Cart")}
+                >
                   <img width={34} src={cartIcon} />
                   <h1 className="number-cart2">0</h1>
                 </li>
                 <li>
-                  <img src={accounticon} onClick={()=> document.location = "/Login"} width={36} />
+                  <img
+                    src={accounticon}
+                    onClick={() => (document.location = "/Login")}
+                    width={36}
+                  />
                 </li>
               </div>
             </div>

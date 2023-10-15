@@ -4,7 +4,7 @@ import "./Subscribe.css";
 export const Subscribe = () => {
   return (
     <div className="div-root-Subscribe">
-      <h1>
+      <h1 className="text-sub-h">
         Subscribe to our newsketter to get updates
         <br /> to our lasted callection
       </h1>

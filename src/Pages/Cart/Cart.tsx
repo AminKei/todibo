@@ -2,6 +2,7 @@ import React from "react";
 import "./Cart.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Footer } from "../../Components/Footer/Footer";
+import { Button } from "../../Components/Button/Button";
 
 let ImageCart =
   "https://contents.mediadecathlon.com/p2436315/e957bd6a23553ffabaef22fd550e99c3/p2436315.jpg";
@@ -14,6 +15,74 @@ const Cart = () => {
         <h2>Cart</h2>
         <div className="root-box">
           <div className="root-items">
+            <div className="item-product2">
+              <img src={ImageCart} className="img-product-cart" />
+              <div
+                className="info-data-cart"
+              >
+                <div className="data-top">
+                  <h5>Cardigen</h5>
+                  <input type="number" />
+                  <h4>$ 120</h4>
+                </div>
+                <div className="data-bottom">
+                  <p>Green xs</p>
+                  <p>Remove</p>
+                  <p>Caption</p>
+                </div>
+              </div>
+            </div>
+            <div className="item-product2">
+              <img src={ImageCart} className="img-product-cart" />
+              <div
+                className="info-data-cart"
+              >
+                <div className="data-top">
+                  <h5>Cardigen</h5>
+                  <input type="number" />
+                  <h4>$ 120</h4>
+                </div>
+                <div className="data-bottom">
+                  <p>Green xs</p>
+                  <p>Remove</p>
+                  <p>Caption</p>
+                </div>
+              </div>
+            </div>
+            <div className="item-product2">
+              <img src={ImageCart} className="img-product-cart" />
+              <div
+                className="info-data-cart"
+              >
+                <div className="data-top">
+                  <h5>Cardigen</h5>
+                  <input type="number" />
+                  <h4>$ 120</h4>
+                </div>
+                <div className="data-bottom">
+                  <p>Green xs</p>
+                  <p>Remove</p>
+                  <p>Caption</p>
+                </div>
+              </div>
+            </div>
+            <div className="item-product2">
+              <img src={ImageCart} className="img-product-cart" />
+              <div
+                className="info-data-cart"
+              >
+                <div className="data-top">
+                  <h5>Cardigen</h5>
+                  <input type="number" />
+                  <h4>$ 120</h4>
+                </div>
+                <div className="data-bottom">
+                  <p>Green xs</p>
+                  <p>Remove</p>
+                  <p>Caption</p>
+                </div>
+              </div>
+            </div>
             <div className="item-product2">
               <img src={ImageCart} className="img-product-cart" />
               <div
@@ -53,7 +122,16 @@ const Cart = () => {
                   <td>$3312.00</td>
                 </tr>
               </table>
-              <button className="btn-cart">Checkout now</button>
+              <Button
+                  bgColor="#252525"
+                  border="white solid 1px "
+                  color="white"
+                  height={60}
+                  radius="10px"
+                  className="btn-cart"
+                >
+                  Checkout now
+                </Button>
             </div>
           </div>
         </div>

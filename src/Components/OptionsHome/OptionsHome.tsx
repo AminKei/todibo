@@ -5,7 +5,7 @@ let icon_img = "https://static.vecteezy.com/system/resources/previews/014/396/44
 
 const OptionsHome = () => {
   return (
-    <div className="root-div-OptionsHome">
+    <div className="root-div-OptionsHome" id="about">
       <div className="box-options">
         <div className="div-img"><img src={icon_img} width={100}/></div>
         <h2>Physical health</h2>

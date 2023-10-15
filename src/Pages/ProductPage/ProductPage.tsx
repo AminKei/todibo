@@ -8,6 +8,7 @@ import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts
 import Limited from "../../Components/Limited/Limited";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
+import { Button } from "../../Components/Button/Button";
 
 let productImg =
   "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg";
@@ -42,7 +43,17 @@ const ProductPage = () => {
               <div className="item-color2"></div>
               <div className="item-color3"></div>
             </div>
-            <button className="btn-propage">Add To Cart</button>
+            
+            <Button 
+                  bgColor="#252525"
+                  border="white solid 1px "
+                  color="white"
+                  height={60}
+                  radius="10px"
+                  className="btn-propage"
+                >
+                  Add To Cart
+                </Button>
           </div>
         </div>
       </div>

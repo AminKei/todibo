@@ -10,6 +10,8 @@
 }
 .root-items {
   margin-top: 4vh;
+  overflow: scroll;
+  height: 500px;
 }
 .item-product2 {
   width: 100vh;
@@ -98,7 +100,7 @@
     }
     .item-product2{
         margin: 0;
-        width: 370px;
+        width: 345px;
         padding: 5px;
     }
     .info-data-cart{

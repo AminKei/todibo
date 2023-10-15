@@ -10,6 +10,7 @@ import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts
 import Limited from "../../Components/Limited/Limited";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
+import { Button } from "../../Components/Button/Button";
 
 const Home = () => {
   return (
@@ -17,19 +18,32 @@ const Home = () => {
       <AppBar />
       <div className="div-home">
         <img className="img-home" src={ImgHome} />
-        
-        <h1 className="text-home" >Level up your style with our spring collections </h1>
-        <button className="btn-home">Shop Now</button>
+
+        <h1 className="text-home">
+          Level up your style with our spring collections{" "}
+        </h1>
+        <Button
+          bgColor="#252525"
+          border="white solid 1px "
+          color="white"
+          height={60}
+          width={320}
+          radius="10px"
+          className="btn-home"
+          onClick={() => (document.location = "/AllProduct")}
+        >
+          Shop Now
+        </Button>
       </div>
 
-      <Brands/>
-      <Experiences/>
-      <Currated/>
-      <FeaturedProducts/>
-      <Limited/>
-      <Subscribe/>
-      <OptionsHome/>
-      <Footer/>
+      <Brands />
+      <Experiences />
+      <Currated />
+      <FeaturedProducts />
+      <Limited />
+      <Subscribe />
+      <OptionsHome />
+      <Footer />
     </>
   );
 };
