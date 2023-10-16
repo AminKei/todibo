@@ -17,9 +17,7 @@ const Cart = () => {
           <div className="root-items">
             <div className="item-product2">
               <img src={ImageCart} className="img-product-cart" />
-              <div
-                className="info-data-cart"
-              >
+              <div className="info-data-cart">
                 <div className="data-top">
                   <h5>Cardigen</h5>
                   <input type="number" />
@@ -34,9 +32,7 @@ const Cart = () => {
             </div>
             <div className="item-product2">
               <img src={ImageCart} className="img-product-cart" />
-              <div
-                className="info-data-cart"
-              >
+              <div className="info-data-cart">
                 <div className="data-top">
                   <h5>Cardigen</h5>
                   <input type="number" />
@@ -49,45 +45,10 @@ const Cart = () => {
                 </div>
               </div>
             </div>
+  
             <div className="item-product2">
               <img src={ImageCart} className="img-product-cart" />
-              <div
-                className="info-data-cart"
-              >
-                <div className="data-top">
-                  <h5>Cardigen</h5>
-                  <input type="number" />
-                  <h4>$ 120</h4>
-                </div>
-                <div className="data-bottom">
-                  <p>Green xs</p>
-                  <p>Remove</p>
-                  <p>Caption</p>
-                </div>
-              </div>
-            </div>
-            <div className="item-product2">
-              <img src={ImageCart} className="img-product-cart" />
-              <div
-                className="info-data-cart"
-              >
-                <div className="data-top">
-                  <h5>Cardigen</h5>
-                  <input type="number" />
-                  <h4>$ 120</h4>
-                </div>
-                <div className="data-bottom">
-                  <p>Green xs</p>
-                  <p>Remove</p>
-                  <p>Caption</p>
-                </div>
-              </div>
-            </div>
-            <div className="item-product2">
-              <img src={ImageCart} className="img-product-cart" />
-              <div
-                className="info-data-cart"
-              >
+              <div className="info-data-cart">
                 <div className="data-top">
                   <h5>Cardigen</h5>
                   <input type="number" />
@@ -103,25 +64,22 @@ const Cart = () => {
           </div>
           <div className="root-checkout">
             <div className="checkout">
-              <table className="table-cart">
-                <tr>
+              <div className="data-di-sta">
+                <div className="data-static">
                   <td>Subtotal:</td>
-                  <td>$3300.00</td>
-                </tr>
-                <tr>
                   <td>Discount:</td>
-                  <td>$0</td>
-                </tr>
-                <tr>
                   <td>Delivery:</td>
-                  <td>$12</td>
-                </tr>
-                <hr />
-                <tr>
+                  
                   <td>Grand total:</td>
+                </div>
+                <div className="data-dainmic">
+                  <td>$3300.00</td>
+                  <td>$0</td>
+                  <td>$12</td>
                   <td>$3312.00</td>
-                </tr>
-              </table>
+                </div>
+
+              </div>
               <Button
                   bgColor="#252525"
                   border="white solid 1px "
@@ -136,7 +94,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

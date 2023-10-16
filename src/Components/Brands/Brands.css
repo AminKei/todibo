@@ -9,13 +9,9 @@
 }
 
 .img-brands{
-    width: 87vw;
-    margin-top: 2vh;
-
-}
-.img-brands:hover{
-    scale: 1.1;
-    transition: all .3s;
+    width: 100%;
+    /* margin-top: 2vh; */
+    height: 300px;
 }
 
 @media only screen and (max-width:800px) {

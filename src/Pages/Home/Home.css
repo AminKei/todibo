@@ -17,10 +17,8 @@
     font-size: 80px;
     text-align: center;
     position: absolute;
-    color: white;
+    /* color: w hite; */
     width: 80%;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    text-shadow: 10px 10px  rgb(0, 0, 0);
     cursor: pointer;
 }
 .btn-home{
@@ -28,7 +26,7 @@
     border: #fff solid 2px ;
     padding: 20px;
     width: 300px;
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 99999;
     position: absolute;
     border-radius: 10px;
@@ -36,6 +34,30 @@
     cursor: pointer;
     font-size: 20px;
 }   
+
+
+svg {
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 4s infinite alternate;
+	stroke-width: 2;
+	stroke: #000000;
+	font-size: 100px;
+    font-weight: bold;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); }
+	80%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); stroke-width: 3; }
+	100% {
+		fill: rgba(0,0,0,1); stroke: rgba(0,0,0,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
 
 @media only screen  and (max-width:900px){
     .div-home{

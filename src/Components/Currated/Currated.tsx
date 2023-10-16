@@ -1,7 +1,7 @@
 import React from "react";
 import "./Currated.css";
 
-import currtedImg from '../../Assets/Images/currtedImg.png';
+import currtedImg from "../../Assets/Images/currtedImg.png";
 
 const Currated = () => {
   return (

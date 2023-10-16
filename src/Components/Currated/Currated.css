@@ -1,56 +1,56 @@
-.root-div-Currated{
-    margin-top: 10vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    padding: 20px;
-    margin-bottom: 10vh;
+.root-div-Currated {
+  margin-top: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 20px;
+  margin-bottom: 10vh;
 }
-.text-root-currated{
-    margin-bottom: 8vh;
+.text-root-currated {
+  margin-bottom: 8vh;
 }
-.divs-Currated{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
+.divs-Currated {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
-.item-pick{
-    z-index: 2;
-    justify-content: space-around   ;
-    align-items: center;
-    display: flex;
+.item-pick {
+  z-index: 2;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }
 
-.btn-item{
-    z-index: 99999;
-    position: absolute;
-    padding: 20px;
-    background-color: white;
-    border: white solid 2px;
-    border-radius: 10px;
-    width: 300px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 40vh;
+.btn-item {
+  z-index: 99999;
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  border: white solid 2px;
+  border-radius: 10px;
+  width: 300px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 40vh;
 }
-@media only screen and (max-width:900px) {
-    .root-div-Currated{
-        margin: 0;
-        padding: 40px;
-    }
-    .divs-Currated{
-        display: grid;
-        gap: 50px;
-        margin: 0;
-    }
-    .img-item{
-        width: 300px;
-        height: 300px;
-        margin: 0;
-        padding: 0;
-    }
-    .text-root-currated{
-        width: 100%;
-        font-size: 20px;
-        text-align: left;
-        margin-left: -2vh;
-    }
+@media only screen and (max-width: 900px) {
+  .root-div-Currated {
+    margin: 0;
+    padding: 40px;
+  }
+  .divs-Currated {
+    display: grid;
+    gap: 50px;
+    margin: 0;
+  }
+  .img-item {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .text-root-currated {
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin-left: -2vh;
+  }
 }

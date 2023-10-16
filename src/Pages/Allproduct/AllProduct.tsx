@@ -8,6 +8,10 @@ import { Pagination } from "../../Components/Pagination/Pagination";
 let Product =
   "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg";
 
+  let cartIcon =
+  "https://www.mrstastekw.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fempty-cart.bfde06e6.gif&w=256&q=75";
+  
+
 const AllProduct = () => {
   return (
     <>
@@ -33,11 +37,13 @@ const AllProduct = () => {
         </div>
 
         <div className="root-allproduct-list">
-          <div className="item-allpro">
+      
+          <div className="item-allpro" onClick={() => document.location = "/ProductPage"}>
             <img src={Product} className="item-img-pro" alt="product" />
             <p> Autumn</p>
             <h2> $120</h2>
-            <button className="btn"> view</button>
+            <img src={cartIcon} width={58}/>
+            
           </div>
         </div>
       </div>

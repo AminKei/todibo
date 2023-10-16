@@ -20,11 +20,17 @@ const Home = () => {
         <img className="img-home" src={ImgHome} />
 
         <h1 className="text-home">
-          Level up your style with our spring collections{" "}
+          <div className="wrapper-text">
+            <svg>
+              <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Level up your style with our spring collections
+              </text>
+            </svg>
+          </div>
         </h1>
         <Button
           bgColor="#252525"
-          border="white solid 1px "
+          border="#252525 solid 1px "
           color="white"
           height={60}
           width={320}
