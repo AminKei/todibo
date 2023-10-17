@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Button } from "../Button/Button";
 
 export const Footer = () => {
   return (
@@ -85,6 +86,7 @@ export const Footer = () => {
                 Copyright &copy; 2017 All Rights Reserved by
                 <a href="#">Scanfcode</a>.
               </p>
+              <Button width={200} margin="1vh" bgColor="white" color="black" border="black" height={50}> Send Reviw </Button>
             </div>
 
             <div >

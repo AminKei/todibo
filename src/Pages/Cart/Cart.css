@@ -100,6 +100,22 @@
     gap: 50px;
     margin-right: 7vh;
 }
+
+.input-item-cart{
+    display: flex;
+}
+.input-cart-number{
+    outline: none;
+    width: 80px;
+    margin-right:10px ;
+    margin-left:10px ;
+    text-align: center;
+    font-size: 20px;
+}
+.input-cart-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 @media only screen and (max-width:900px) {
     .root-cart{
         margin: 0;
@@ -149,5 +165,8 @@
     }
     .btn-cart{
         width: 100%;
+    }
+    #caption-cart-item{
+        display: none;
     }
 }

@@ -1,8 +1,11 @@
 import React from "react";
 import "./Limited.css";
-import ImgLimited from "../../Assets/Images/limited.png";
+// import ImgLimited from "../../Assets/Images/limited.png";
 import { Button } from "../Button/Button";
 
+
+
+let ImgLimited =  "https://amateurphotographer.com/wp-content/uploads/sites/7/2022/04/photo-Brian-Lloyd-Duckett-13_381240142_663750521-black-and-white-street-photography.jpg?w=900"
 const Limited = () => {
   return (
     <div className="root-div-Limited">
