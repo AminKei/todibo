@@ -38,7 +38,7 @@ const Home = () => {
           className="btn-home"
           onClick={() => (document.location = "/AllProduct")}
         >
-          Order Now
+          Shop Now
         </Button>
       </div>
 
