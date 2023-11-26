@@ -23,7 +23,7 @@ const Home = () => {
           <div className="wrapper-text">
             <svg>
               <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                Level up your style with our spring collections
+                Level up your style with our spring collections<br/> See and send to your friend
               </text>
             </svg>
           </div>

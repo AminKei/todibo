@@ -21,19 +21,62 @@ const Cart = () => {
                 <div className="data-top">
                   <h5>Cardigen</h5>
                   <div className="input-item-cart">
-                    <Button bgColor="black" border="black solid 1px"> +</Button>
-                    <input type="number" className="input-cart-number" placeholder="1" step="1" />
-                    <Button bgColor="black" border="black solid 1px">-</Button>
+                    <Button bgColor="black" border="black solid 1px">
+                      {" "}
+                      +
+                    </Button>
+                    <input
+                      type="number"
+                      className="input-cart-number"
+                      placeholder="1"
+                      step="1"
+                    />
+                    <Button bgColor="black" border="black solid 1px">
+                      -
+                    </Button>
                   </div>
                   <h4>$ 120</h4>
                 </div>
                 <div className="data-bottom">
                   <p>Green xs</p>
-                  <p >Remove</p>
+                  <p>Remove</p>
                   <p id="caption-cart-item">Caption</p>
                 </div>
               </div>
             </div>
+
+            {/* item 2 :   */}
+            {/* 
+            <div className="item-product2">
+              <img src={ImageCart} className="img-product-cart" />
+              <div className="info-data-cart">
+                <div className="data-top">
+                  <h5>Cardigen</h5>
+                  <div className="input-item-cart">
+                    <Button bgColor="black" border="black solid 1px">
+                      {" "}
+                      +
+                    </Button>
+                    <input
+                      type="number"
+                      className="input-cart-number"
+                      placeholder="1"
+                      step="1"
+                    />
+                    <Button bgColor="black" border="black solid 1px">
+                      -
+                    </Button>
+                  </div>
+                  <h4>$ 120</h4>
+                </div>
+                <div className="data-bottom">
+                  <p>Green xs</p>
+                  <p>Remove</p>
+                  <p id="caption-cart-item">Caption</p>
+                </div>
+              </div>
+            </div>
+            */}
           </div>
           <div className="root-checkout">
             <div className="checkout">
