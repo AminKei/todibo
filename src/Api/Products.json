@@ -1,0 +1,39 @@
+{
+    "data": [
+      {
+        "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
+        "name": "Woman Top",
+        "type": "tops",
+        "size": "L",
+        "price": 120
+      },
+      {
+        "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
+        "name": " ABC",
+        "type": "tshert",
+        "size": "XL",
+        "price": 50
+      },
+      {
+        "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
+        "name": "Tops ABC",
+        "type": "tops",
+        "size": "XL",
+        "price": 200
+      },
+      {
+        "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
+        "name": "t shert ABC",
+        "type": "tshert",
+        "size": "L",
+        "price": 20
+      },
+      {
+        "img": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/52897f902562f039849a63b1dd9102e9.jpg?imageView2/2/w/500/q/60/format/webp",
+        "name": "shose",
+        "type": "shose",
+        "size": "L",
+        "price": 90
+      }
+    ]
+  }

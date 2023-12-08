@@ -5,35 +5,50 @@ import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
 import { Pagination } from "../../Components/Pagination/Pagination";
 import Products from "../../Api/Products.json";
-let Product =
-  "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg";
 
 let cartIcon =
   "https://www.mrstastekw.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fempty-cart.bfde06e6.gif&w=256&q=75";
 
 const AllProduct = () => {
-
   const [dataList, setDataList] = useState(Products.data);
 
   function onCheckChanged(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.checked) {
-      const newList = Products.data.filter(item => item.type === event.target.name)
-      setDataList(newList)
+      const newList = Products.data.filter(
+        (item) => item.type === event.target.name
+      );
+      setDataList(newList);
     }
-    else if (!event.target.checked){
-      setDataList(Products.data)
-    }
+    // else if (!event.target.checked){
+    //   setDataList(Products.data)
+    // }
     else {
-      setDataList(Products.data)
+      setDataList(Products.data);
     }
-
   }
+
+  /* filter by size */
+
+  function onchengeBYSize(event: React.ChangeEvent<HTMLInputElement>) {
+    if (event.target.checked) {
+      const newListSize = Products.data.filter(
+        (item) => item.size === event.target.name
+      );
+      setDataList(newListSize);
+    } else {
+      setDataList(Products.data);
+    }
+  }
+
+  /* filter by price */
 
   function price_between_100_to_200() {
-     const filteredPrice = Products.data.filter(item => item.price >= 100 && item.price <= 200)
-     setDataList(filteredPrice  )
+    const filteredPrice = Products.data.filter(
+      (item) => item.price >= 100 && item.price <= 200
+    );
+    setDataList(filteredPrice);
   }
-  
+
   return (
     <>
       <AppBar />
@@ -41,17 +56,26 @@ const AllProduct = () => {
         <p>Home / Browse Products </p>
         <div className="div-root-filter">
           <div className="div-filter">
-            <label>filter:</label>
-            <label htmlFor="">Tops</label>
-            <input type="checkbox" name="tops" onChange={onCheckChanged} />
-            <label htmlFor="">T shert</label>
-            <input type="checkbox" name="tshert" onChange={onCheckChanged} />
-            <label htmlFor="">Shose</label>
-            <input type="checkbox" name="shose" onChange={onCheckChanged} />
+            <p>filter by type : </p>
+            <div>
+              <label htmlFor="">Tops</label>
+              <input type="checkbox" name="tops" onChange={onCheckChanged} />
+              <label htmlFor="">T shert</label>
+              <input type="checkbox" name="tshert" onChange={onCheckChanged} />
+              <label htmlFor="">Shose</label>
+              <input type="checkbox" name="shose" onChange={onCheckChanged} />
 
-            <label htmlFor="">Price Filter</label>
-            <input type="checkbox" onChange={price_between_100_to_200} />
-
+              <label htmlFor="">Price Filter</label>
+              <input type="checkbox" onChange={price_between_100_to_200} />
+            </div>
+            <br />
+            <div>
+              <p>Filter by size :</p>
+              <label>L</label>
+              <input type="checkbox" name="L" onChange={onchengeBYSize} />
+              <label>XL</label>
+              <input type="checkbox" name="XL" onChange={onchengeBYSize} />
+            </div>
           </div>
 
           <div className="div-sort">
