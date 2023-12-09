@@ -32,8 +32,16 @@
         "img": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/52897f902562f039849a63b1dd9102e9.jpg?imageView2/2/w/500/q/60/format/webp",
         "name": "shose",
         "type": "shose",
-        "size": "L",
+        "size":  41,
         "price": 90
+      },
+      {
+        "img": "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389 ",
+        "name": "YuoUo",
+        "type": "shose",
+        "size": 40,
+        "price": 20
+
       }
     ]
   }

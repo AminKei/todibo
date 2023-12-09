@@ -12,20 +12,19 @@ let cartIcon =
 const AllProduct = () => {
   const [dataList, setDataList] = useState(Products.data);
 
+
+  /* filter by type : */
+
   function onCheckChanged(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.checked) {
-      const newList = Products.data.filter(
-        (item) => item.type === event.target.name
-      );
+      const newList = Products.data.filter((item) => item.type === event.target.name);
       setDataList(newList);
     }
-    // else if (!event.target.checked){
-    //   setDataList(Products.data)
-    // }
     else {
       setDataList(Products.data);
     }
   }
+  
 
   /* filter by size */
 
@@ -44,10 +43,11 @@ const AllProduct = () => {
 
   function price_between_100_to_200() {
     const filteredPrice = Products.data.filter(
-      (item) => item.price >= 100 && item.price <= 200
-    );
-    setDataList(filteredPrice);
+      (item) => item.price >= 100 && item.price <= 200)
+      setDataList(filteredPrice);
   }
+
+
 
   return (
     <>
@@ -86,7 +86,7 @@ const AllProduct = () => {
                   <h3>Expensive</h3>
                   <h3>Chiper</h3>
                   <h3>More see</h3>
-                  <h3>News</h3>
+                   <h3>News</h3>
                 </div>
               </div>
             </div>
