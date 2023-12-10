@@ -1,47 +1,109 @@
 {
-    "data": [
-      {
-        "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
-        "name": "Woman Top",
-        "type": "tops",
-        "size": "L",
-        "price": 120
-      },
-      {
-        "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
-        "name": " ABC",
-        "type": "tshert",
-        "size": "XL",
-        "price": 50
-      },
-      {
-        "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
-        "name": "Tops ABC",
-        "type": "tops",
-        "size": "XL",
-        "price": 200
-      },
-      {
-        "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
-        "name": "t shert ABC",
-        "type": "tshert",
-        "size": "L",
-        "price": 20
-      },
-      {
-        "img": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/52897f902562f039849a63b1dd9102e9.jpg?imageView2/2/w/500/q/60/format/webp",
-        "name": "shose",
-        "type": "shose",
-        "size":  41,
-        "price": 90
-      },
-      {
-        "img": "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389",
-        "name": "YuoUo",
-        "type": "shose",
-        "size": 40,
-        "price": 20
+  "data": [
+    {
+      "id":1,
+      "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
+      "name": "Woman Top",
+      "type": "tops",
+      "size": "L",
+      "price": 120
+    },
+    {
+      "id":2,
+      "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
+      "name": " Micro saft",
+      "type": "tshert",
+      "size": "XL",
+      "price": 50
+    },
+    {
+      "id":3,
+      "img": "https://images.boardriders.com/globalGrey/rvca-products/all/default/large/avjzt00735_rvca,w_vwt_frt1.jpg",
+      "name": "Tops ABC",
+      "type": "tops",
+      "size": "XL",
+      "price": 200
+    },
+    {
+      "id":4,
+      "img": "https://www.boody.com.au/cdn/shop/products/Women_s-Crew-Neck-T-Shirt-Dark-Marl-Side.jpg?v=1688000650",
+      "name": "t shert ABC",
+      "type": "tshert",
+      "size": "L",
+      "price": 20
+    },
+    {
+      "id":5,
+      "img": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/52897f902562f039849a63b1dd9102e9.jpg?imageView2/2/w/500/q/60/format/webp",
+      "name": "shose",
+      "type": "shose",
+      "size":  41,
+      "price": 90
+    },
+    {
+      "id":6,
+      "img": "https://5.imimg.com/data5/SELLER/Default/2022/2/FP/TS/KV/73718625/b71-500x500.jpeg",
+      "name": "YuoUo",
+      "type": "shose",
+      "size": 40,
+      "price": 34
 
-      }
-    ]
-  }
+    },
+    {
+      "id":6,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    },
+    {
+      "id":7,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    },
+    {
+      "id":8,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    },
+    {
+      "id":9,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    } ,
+    {
+      "id":10,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    },
+    {
+      "id":11,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    }
+  ]
+}
+
+  

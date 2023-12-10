@@ -16,6 +16,7 @@
   width: 600px;
   height: 600px;
   margin-top: -5vh;
+  border-radius: 5px;
 }
 .div-infoproduct {
   display: grid;

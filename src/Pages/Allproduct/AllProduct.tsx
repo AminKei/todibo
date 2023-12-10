@@ -12,19 +12,18 @@ let cartIcon =
 const AllProduct = () => {
   const [dataList, setDataList] = useState(Products.data);
 
-
   /* filter by type : */
 
   function onCheckChanged(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.checked) {
-      const newList = Products.data.filter((item) => item.type === event.target.name);
+      const newList = Products.data.filter(
+        (item) => item.type === event.target.name
+      );
       setDataList(newList);
-    }
-    else {
+    } else {
       setDataList(Products.data);
     }
   }
-  
 
   /* filter by size */
 
@@ -43,11 +42,10 @@ const AllProduct = () => {
 
   function price_between_100_to_200() {
     const filteredPrice = Products.data.filter(
-      (item) => item.price >= 100 && item.price <= 200)
-      setDataList(filteredPrice);
+      (item) => item.price >= 100 && item.price <= 200
+    );
+    setDataList(filteredPrice);
   }
-
-
 
   return (
     <>
@@ -55,38 +53,49 @@ const AllProduct = () => {
       <div className="div-root-all-product">
         <p>Home / Browse Products </p>
         <div className="div-root-filter">
-          <div className="div-filter">
-            <p>filter by type : </p>
-            <div>
-              <label htmlFor="">Tops</label>
-              <input type="checkbox" name="tops" onChange={onCheckChanged} />
-              <label htmlFor="">T shert</label>
-              <input type="checkbox" name="tshert" onChange={onCheckChanged} />
-              <label htmlFor="">Shose</label>
-              <input type="checkbox" name="shose" onChange={onCheckChanged} />
-
-              <label htmlFor="">Price Filter</label>
-              <input type="checkbox" onChange={price_between_100_to_200} />
-            </div>
-            <br />
-            <div>
-              <p>Filter by size :</p>
-              <label>L</label>
-              <input type="checkbox" name="L" onChange={onchengeBYSize} />
-              <label>XL</label>
-              <input type="checkbox" name="XL" onChange={onchengeBYSize} />
+          <div className="dropdown">
+            <p className="filter">Filter By: </p>
+            <div className="dropdown-content">
+              <a href="#">
+                {" "}
+                <label htmlFor="">Tops</label>
+                <input type="checkbox" name="tops" onChange={onCheckChanged} />
+              </a>
+              <a href="#">
+                <label htmlFor="">T shert</label>
+                <input
+                  type="checkbox"
+                  name="tshert"
+                  onChange={onCheckChanged}
+                />
+              </a>
+              <a href="#">
+                <label htmlFor="">Shose</label>
+                <input type="checkbox" name="shose" onChange={onCheckChanged} />
+              </a>
+              <a href="#">
+                <label htmlFor="">Price Filter</label>
+                <input type="checkbox" onChange={price_between_100_to_200} />
+              </a>
+              <a href="#">
+                <label>Size :</label>
+                <label htmlFor="L">L</label>
+                <input type="checkbox" name="L" onChange={onchengeBYSize} />
+                <label htmlFor="XL">XL</label>
+                <input type="checkbox" name="XL" onChange={onchengeBYSize} />
+              </a>
             </div>
           </div>
 
           <div className="div-sort">
-            <div className="filter">
+            <div className="">
               <div className="dropdown">
                 <p className="dropbtn">Sort By : </p>
                 <div className="dropdown-content">
                   <h3>Expensive</h3>
                   <h3>Chiper</h3>
                   <h3>More see</h3>
-                   <h3>News</h3>
+                  <h3>News</h3>
                 </div>
               </div>
             </div>
@@ -98,7 +107,9 @@ const AllProduct = () => {
             return (
               <div
                 className="item-allpro"
-                onClick={() => (document.location = "/ProductPage")}
+                // onClick={() => (document.location = "/ProductPage")}
+                // onClick={()=>document.location=`/ProductPage?id=${item.id}`}
+                onClick={()=>document.location=`/ProductPage?id=${item.id }`}
               >
                 <img src={item.img} className="item-img-pro" alt="product" />
                 <p> {item.name}</p>
