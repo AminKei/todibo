@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./AllProduct.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
@@ -54,7 +54,7 @@ const AllProduct = () => {
         <p>Home / Browse Products </p>
         <div className="div-root-filter">
           <div className="dropdown">
-            <p className="filter">Filter By: </p>
+            <p className="div-filter">Filter By: </p>
             <div className="dropdown-content">
               <a href="#">
                 {" "}
@@ -107,9 +107,9 @@ const AllProduct = () => {
             return (
               <div
                 className="item-allpro"
-                // onClick={() => (document.location = "/ProductPage")}
-                // onClick={()=>document.location=`/ProductPage?id=${item.id}`}
-                onClick={()=>document.location=`/ProductPage?id=${item.id }`}
+                onClick={() =>
+                  (document.location = `/ProductPage?id=${item.id}`)
+                }
               >
                 <img src={item.img} className="item-img-pro" alt="product" />
                 <p> {item.name}</p>

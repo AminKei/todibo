@@ -6,6 +6,7 @@ import "./Login.css";
 // import { Input } from "../../Components/Input/Input";
 import ImgLogin from '../../Assets/Images/ImgLogin.png';
 import { Button } from "../../Components/Button/Button";
+import { Loading } from "../../Components/Loading/Loading";
 
 const Login = () => {
 
@@ -40,6 +41,8 @@ const Login = () => {
                 <img src={ImgLogin}/>
             </div>
         </div>
+
+        <Loading/>
       
     </>
   );

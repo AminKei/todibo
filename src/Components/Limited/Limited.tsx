@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 
 
 
-let ImgLimited =  "https://amateurphotographer.com/wp-content/uploads/sites/7/2022/04/photo-Brian-Lloyd-Duckett-13_381240142_663750521-black-and-white-street-photography.jpg?w=900"
+let ImgLimited =  "https://img.freepik.com/premium-photo/attractive-couple-black-stylish-elegant-young-man-woman-spotlight-beautiful-blo_125374-3603.jpg"
 const Limited = () => {
   return (
     <div className="root-div-Limited">
@@ -17,7 +17,7 @@ const Limited = () => {
             35% off only this fridy shoping cart original
             <br /> and get spicial gift
           </h1>
-          <Button bgColor="#fff" border="white solid 1px " color="black" height={60} width={300} >Grab it new</Button>
+          <Button bgColor="#fff" border="white solid 1px " color="black" height={60} width={350} >Grab it new</Button>
         </div>
       </div>
     </div>

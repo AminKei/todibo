@@ -1,16 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import SignIn from "./Pages/SignIn/SignIn";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 import Cart from "./Pages/Cart/Cart";
 import AllProduct from "./Pages/Allproduct/AllProduct";
+
 const root = ReactDOM.createRoot(
+
   document.getElementById("root") as HTMLElement
+  
 );
 root.render(
   <React.StrictMode>

@@ -27,7 +27,9 @@ const ProductPage = () => {
     <>
       <AppBar />
       <div className="root-div-propage">
-        <div className="div-product">
+        {
+          selected ? 
+          <div className="div-product">
           <div className="div-img1">
             <img src={selected?.img} className="img-product" />
           </div>
@@ -66,6 +68,10 @@ const ProductPage = () => {
             </Button>
           </div>
         </div>
+        :
+        <h1>Loading ...</h1>
+        }
+        
       </div>
       <Datalist />
       <TheDatalist />

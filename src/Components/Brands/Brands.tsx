@@ -9,6 +9,8 @@ const Brands = () => {
       <div className="group-img-brands">
         <h1>Brands</h1>
         <img src={brands}  className="img-brands"/>
+        <img src={brands}  className="img-brands"/>
+        <img src={brands}  className="img-brands"/>
       </div>
     </div>
   );

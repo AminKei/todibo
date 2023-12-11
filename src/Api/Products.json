@@ -50,15 +50,6 @@
 
     },
     {
-      "id":6,
-      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
-      "name": "Shalvar EC Man",
-      "type": "shalvar",
-      "size": "XL",
-      "price": 54
-
-    },
-    {
       "id":7,
       "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
       "name": "Shalvar EC Man",
@@ -72,8 +63,8 @@
       "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
       "name": "Shalvar EC Man",
       "type": "shalvar",
-      "size": "XL",
-      "price": 54
+      "size": "X",
+      "price": 154
 
     },
     {
@@ -84,7 +75,7 @@
       "size": "XL",
       "price": 54
 
-    } ,
+    },
     {
       "id":10,
       "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
@@ -93,9 +84,18 @@
       "size": "XL",
       "price": 54
 
-    },
+    } ,
     {
       "id":11,
+      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "name": "Shalvar EC Man",
+      "type": "shalvar",
+      "size": "XL",
+      "price": 54
+
+    },
+    {
+      "id":12,
       "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
       "name": "Shalvar EC Man",
       "type": "shalvar",

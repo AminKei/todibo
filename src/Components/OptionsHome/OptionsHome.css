@@ -31,5 +31,6 @@
     margin: 0;
     padding: 20px;
     display: grid;
+    margin-left: 2vh;
   }
 }
