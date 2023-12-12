@@ -34,30 +34,30 @@
 .option-product {
   color: gray;
 }
-.div-colors{
-    display: flex;
-    gap: 10px;
+.div-colors {
+  display: flex;
+  gap: 10px;
 }
-.item-color1{
-    background-color: blue;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    border-radius:5px;
+.item-color1 {
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
 }
-.item-color2{
-    background-color: rgb(255, 33, 81);
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    border-radius:5px;
+.item-color2 {
+  background-color: rgb(255, 33, 81);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
 }
-.item-color3{
-    background-color: rgb(58, 184, 0);
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    border-radius:5px;
+.item-color3 {
+  background-color: rgb(58, 184, 0);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 900px) {
   .root-div-propage {
@@ -65,8 +65,8 @@
     width: 100%;
     height: 100%;
     margin: 0;
-}
-.div-product {
+  }
+  .div-product {
     display: grid;
     /* gap: 300px; */
     margin-bottom: 10vh;
@@ -74,7 +74,7 @@
     margin-top: 2vh;
   }
   .img-product {
-    width: 350px;
+    width: 370px;
     height: 380px;
     margin: 0;
   }
@@ -97,7 +97,7 @@
   .btn-propage {
     width: 100%;
   }
-  .p-pro-link{
+  .p-pro-link {
     top: 0;
     position: absolute;
     margin-top: 14vh;

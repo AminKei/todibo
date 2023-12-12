@@ -20,13 +20,8 @@ const Home = () => {
         <img className="img-home" src={ImgHome} />
 
         <h1 className="text-home">
-          <div className="wrapper-text">
-            <svg>
-              <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                Level up your style with our spring collections<br/> See and send to your friend
-              </text>
-            </svg>
-          </div>
+          Your Online Shop, the best online shopping destination with special
+          discounts. Join us and take advantage of our exclusive discounts.
         </h1>
         <Button
           bgColor="#252525"
@@ -38,7 +33,7 @@ const Home = () => {
           className="btn-home"
           onClick={() => (document.location = "/AllProduct")}
         >
-          Shop Now
+          Order Now
         </Button>
       </div>
 

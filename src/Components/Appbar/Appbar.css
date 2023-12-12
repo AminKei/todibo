@@ -15,7 +15,6 @@ body {
   width: 100%;
   margin: auto;
   z-index: 5;
-  
 }
 
 .navbar {
@@ -25,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-}   
+}
 
 .nav-container {
   display: flex;
@@ -183,7 +182,7 @@ body {
   font-size: 14px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    cursor: pointer;
+  cursor: pointer;
 }
 .button-cart {
   display: flex;
@@ -215,7 +214,6 @@ body {
 .icon-search2 {
   display: none;
 }
-
 
 @media only screen and (max-width: 1000px) {
   .menu-items3 {
@@ -252,5 +250,4 @@ body {
     scale: 1.1;
     transition: all 0.3s;
   }
-  
 }

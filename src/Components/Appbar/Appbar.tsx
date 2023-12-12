@@ -7,7 +7,8 @@ import { Button } from "../Button/Button";
 let cartIcon =
   "https://icons.veryicon.com/png/o/miscellaneous/unicons/shopping-basket-16.png";
 
-let homeicon = "https://lordicon.com/icons/system/outline/41-home.svg";
+let homeicon =
+  "https://icons.veryicon.com/png/o/miscellaneous/skent-icon/home-225.png";
 
 let accounticon =
   "https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png";
@@ -81,7 +82,7 @@ const AppBar = () => {
                   <img src={Categoryicon} width={32} />
                 </li>
                 <li onClick={() => (document.location = "/")}>
-                  <img src={homeicon} width={36} />
+                  <img src={homeicon} width={30} />
                 </li>
                 <li
                   className="carticonandbadge"
@@ -115,6 +116,15 @@ const AppBar = () => {
               </li>
               <li>
                 <a href="#">Shose</a>
+              </li>
+              <li>
+                <a href="#">Kapus</a>
+              </li>
+              <li>
+                <a href="#">Accesory manlidona</a>
+              </li>
+              <li>
+                <a href="#">Multipel shipinined</a>
               </li>
             </div>
           </div>
