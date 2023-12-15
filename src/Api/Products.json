@@ -6,7 +6,13 @@
       "name": "Woman Top",
       "type": "tops",
       "size": "L",
-      "price": 120
+      "price": 120,
+      "Datalist":" We use different types of cookies to provide visitors of our ",
+      "Attributes":{
+        "At1":"Made with full cotton",
+        "At2":"Slim fit for any body",
+        "At3":"Quality control by JC"
+      }
     },
     {
       "id": 2,
@@ -14,7 +20,13 @@
       "name": " Micro saft",
       "type": "tshert",
       "size": "XL",
-      "price": 50
+      "price": 50,
+      "Datalist":"orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ",
+      "Attributes":{
+        "At1":"Made with full Lositicr",
+        "At2":"Slim fit for any Summer",
+        "At3":"Quality control by Orbic"
+      }
     },
     {
       "id": 3,
@@ -74,7 +86,7 @@
     },
     {
       "id": 10,
-      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "img": "https://contents.mediadecathlon.com/p2436315/e957bd6a23553ffabaef22fd550e99c3/p2436315.jpg",
       "name": "Shalvar EC Man",
       "type": "shalvar",
       "size": "XL",
@@ -82,7 +94,7 @@
     },
     {
       "id": 11,
-      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "img": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13743-c3-eyeglasses_6_april_lk_air_female14650.jpg",
       "name": "Shalvar EC Man",
       "type": "shalvar",
       "size": "XL",
@@ -90,7 +102,7 @@
     },
     {
       "id": 12,
-      "img": "https://maxbax.com/wp-content/uploads/2022/11/DSC_7071.jpg",
+      "img": "https://cdn.eyewa.com/cdn-cgi/image/width=900,height=900,quality=80/media/catalog/product/g/l/glasses-spectus-spc-000363-0118-c.jpg",
       "name": "Shalvar EC Man",
       "type": "shalvar",
       "size": "XL",

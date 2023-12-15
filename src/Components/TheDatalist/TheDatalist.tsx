@@ -1,21 +1,32 @@
 import React from "react";
 import './TheDatalist.css';
+import MoreBuyProduct from '../../Api/Products.json';
+import { useSearchParams } from "react-router-dom";
+import { Loading } from "../Loading/Loading";
 
 const TheDatalist = () => {
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const selectedId = searchParams.get("id");
+  const selected = MoreBuyProduct.data.find(
+    (item) => item.id == Number(selectedId)
+  );
+
+
+
   return (
     <div className="div-root-data" id="TheDatalist">
       <h3 className="text-root-data"> The Datalist</h3>
+      {
+        selected ? 
       <p className="textera-data">
-        We use different types of cookies to provide visitors of our website
-        with the best possible user experience including necessary, preferences,
-        statistics and marketing cookies. Select “Allow all cookies” to give
-        your consent to all cookies. Select “Use necessary cookies only” to
-        accept only necessary cookies. Select “Customize” to get more
-        information and adjust your cookie preferences individually. You can
-        revoke your consent and change your cookie preferences at any time with
-        future effect by clicking on the “Cookie Widget” icon in the lower left
-        corner or the “Cookie Policy” link in the footer.
+        {selected?.Datalist}
+       
       </p>
+      :
+        <Loading/>
+      }
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Home = () => {
           border="#252525 solid 1px "
           color="white"
           height={60}
-          width={320}
+          width={350}
           radius="10px"
           className="btn-home"
           onClick={() => (document.location = "/AllProduct")}

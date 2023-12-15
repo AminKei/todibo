@@ -45,7 +45,7 @@ const AppBar = () => {
                   <a href="#Element">Elements</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about">About Us</a>
                 </li>
               </div>
               <Input
