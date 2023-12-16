@@ -12,8 +12,9 @@ import { Button } from "../../Components/Button/Button";
 import { useSearchParams } from "react-router-dom";
 import MoreBuyProduct from "../../Api/Products.json";
 import { Loading } from "../../Components/Loading/Loading";
-
-  const ProductPage = () => {
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+const ProductPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const selectedId = searchParams.get("id");
@@ -28,7 +29,7 @@ import { Loading } from "../../Components/Loading/Loading";
         {selected ? (
           <div className="div-product">
             <div className="div-img1">
-              <img src={selected?.img} className="img-product" />
+                <img src={selected?.img} className="img-product" />
             </div>
             <div className="div-infoproduct">
               <p className="p-pro-link">Home / Products / Dorse </p>
@@ -38,7 +39,7 @@ import { Loading } from "../../Components/Loading/Loading";
               </h2>
               <h1>${selected?.price}</h1>
               <hr />
-              <p>Save 50% right now</p>
+              <p>Save 50% right now 🔥</p>
               <p>Features:</p>
               <ul className="option-product">
                 <li>{selected?.Attributes?.At1}</li>
