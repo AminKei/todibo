@@ -10,6 +10,7 @@ export type Product = {
   image: string[];
   category: Category;
   price: number;
+  DataList: string;
 };
 
 export interface ProductList {
@@ -17,11 +18,10 @@ export interface ProductList {
 }
 
 export interface ProductItem {
-    product: Product;
+  product: Product;
 }
 
 const useProducts = <T>(id?: string | null) => {
-
   const url = id
     ? `${base_url}/api/product?id=${id}`
     : `${base_url}/api/products`;

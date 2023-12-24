@@ -48,7 +48,7 @@ const ProductPage = () => {
                 <li>{selectedProduct.attributes[1]}</li>
                 <li>{selectedProduct.attributes[2]}</li>
               </ul>
-              {/* <h3>Size : {selected?.}</h3> */}
+              <h3>Size : {selectedProduct?.id}</h3>
               <p>Colors:</p>
               <div className="div-colors">
                 <div className="item-color1"></div>
