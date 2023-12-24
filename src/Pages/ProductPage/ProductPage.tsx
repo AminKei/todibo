@@ -1,6 +1,11 @@
-import React from "react";
+import "react-medium-image-zoom/dist/styles.css";
+import { useSearchParams } from "react-router-dom";
+import useProducts, { ProductItem } from "../Allproduct/useProducts";
 import "./ProductPage.css";
 import AppBar from "../../Components/Appbar/Appbar";
+import { useMemo } from "react";
+import { Button } from "../../Components/Button/Button";
+import { Loading } from "../../Components/Loading/Loading";
 import Datalist from "../../Components/Datalist/Datalist";
 import TheDatalist from "../../Components/TheDatalist/TheDatalist";
 import RatingReviews from "../../Components/RatingReviews/RatingReviews";
@@ -8,45 +13,42 @@ import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts
 import Limited from "../../Components/Limited/Limited";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
-import { Button } from "../../Components/Button/Button";
-import { useSearchParams } from "react-router-dom";
-import MoreBuyProduct from "../../Api/Products.json";
-import { Loading } from "../../Components/Loading/Loading";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 const ProductPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const selectedId = searchParams.get("id");
-  const selected = MoreBuyProduct.data.find(
-    (item) => item.id == Number(selectedId)
-  );
+
+  const { data } = useProducts<ProductItem>(selectedId);
+
+  const selectedProduct = useMemo(() => {
+    return data?.product;
+  }, [data]);
 
   return (
     <>
       <AppBar />
       <div className="root-div-propage">
-        {selected ? (
+        {selectedProduct ? (
           <div className="div-product">
             <div className="div-img1">
-                <img src={selected?.img} className="img-product" />
+              <img src={selectedProduct.image[0]} className="img-product" />
             </div>
             <div className="div-infoproduct">
               <p className="p-pro-link">Home / Products / Dorse </p>
               <h2 className="h2-pro-name">
-                {selected?.name}
+                {selectedProduct.name}
                 <br />
               </h2>
-              <h1>${selected?.price}</h1>
+              <h1>${selectedProduct.price}</h1>
               <hr />
               <p>Save 50% right now 🔥</p>
               <p>Features:</p>
               <ul className="option-product">
-                <li>{selected?.Attributes?.At1}</li>
-                <li>{selected?.Attributes?.At2}</li>
-                <li>{selected?.Attributes?.At3}</li>
+                <li>{selectedProduct.attributes[0]}</li>
+                <li>{selectedProduct.attributes[1]}</li>
+                <li>{selectedProduct.attributes[2]}</li>
               </ul>
-              <h3>Size : {selected?.size}</h3>
+              {/* <h3>Size : {selected?.}</h3> */}
               <p>Colors:</p>
               <div className="div-colors">
                 <div className="item-color1"></div>

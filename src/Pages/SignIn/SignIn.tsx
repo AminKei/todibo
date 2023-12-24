@@ -49,7 +49,7 @@ const SignIn = () => {
           </Button>
         </div>
         <div className="div-img-SignIn">
-          <img src={imgSignIn} />
+          <img src={"/Assets/Images/imgSignIn.png"} />
         </div>
       </div>
     </>

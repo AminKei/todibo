@@ -43,7 +43,7 @@ const Login = () => {
           </Button>
         </div>
         <div className="div-img-login">
-          <img src={ImgLogin} />
+          <img src={"/Assets/Images/ImgLogin.png"} />
         </div>
       </div>
     </>
