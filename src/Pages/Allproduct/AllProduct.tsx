@@ -73,14 +73,26 @@ const AllProduct = () => {
                   className="item-img-pro"
                   alt="product"
                 />
-                <p> {item.name}</p>
-                <h2> ${item.price}</h2>
-                <img src="/Assets/Images/empty-cart.gif" width={58} />
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div>
+                    <p> {item.name}</p>
+                    <h2> ${item.price}</h2>
+                  </div>
+
+                  <img
+                    src="/Assets/Images/empty-cart.gif"
+                    width={58}
+                    style={{ marginRight: "-8vh" }}
+                  />
+                </div>
               </div>
             );
           })}
         </div>
       </div>
+
       <Pagination />
       <Subscribe />
       <Footer />

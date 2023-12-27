@@ -33,8 +33,8 @@
   width: 100vh;
   height: 170px;
   padding: 10px;
-  border: gainsboro solid 2px;
-  border-radius: 6px;
+  border-bottom: gainsboro solid 2px;
+  /* border-radius  : 6px; */
   margin-top: 1vh;
   display: flex;
   align-items: center;
@@ -127,6 +127,10 @@
         margin-bottom: 10vh;
         
     }
+    .root-items{
+        height:300px;
+        margin-bottom: -5vh;
+    }
     .data-bottom{
         display: grid;
         gap: 0;
@@ -170,5 +174,10 @@
     }
     #caption-cart-item{
         display: none;
+    }
+    .input-item-cart{
+        width: 150px;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
     }
 }

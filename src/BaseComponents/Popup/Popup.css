@@ -1,0 +1,20 @@
+.popup1 {
+  display: none;
+}
+.popup2 {
+  display: block;
+}
+
+.my-button-popup {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .popup1 {
+    display: block;
+  }
+  .popup2 {
+    display: none;
+  }
+}

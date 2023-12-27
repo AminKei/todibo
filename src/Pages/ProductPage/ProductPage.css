@@ -6,6 +6,7 @@
   text-align: left;
   margin-top: -5vh;
   color: gray;
+  display: flex;
 }
 .div-product {
   display: flex;

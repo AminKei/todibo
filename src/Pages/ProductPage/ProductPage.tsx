@@ -34,7 +34,7 @@ const ProductPage = () => {
               <img src={selectedProduct.image[0]} className="img-product" />
             </div>
             <div className="div-infoproduct">
-              <p className="p-pro-link">Home / Products / Dorse </p>
+              <p className="p-pro-link">Home / Products / <p style={{color:'bla'}}>{selectedProduct.type}</p> </p>
               <h2 className="h2-pro-name">
                 {selectedProduct.name}
                 <br />

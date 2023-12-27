@@ -11,6 +11,7 @@ export type Product = {
   category: Category;
   price: number;
   DataList: string;
+  type:string
 };
 
 export interface ProductList {

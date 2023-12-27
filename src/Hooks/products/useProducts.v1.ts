@@ -11,6 +11,7 @@ type Product = {
   image: string[];
   category: Category;
   price: number;
+  type:string
 }
 
 interface ProductList {
@@ -19,10 +20,6 @@ interface ProductList {
 
 const useProducts = () => {
 
-  function filterByName() {}
-  function filterByCategory() {}
-  function filterByprice() {}
-  function orderByprice() {}
 
   const { data , error, loading } = useFetch<ProductList>(
     "http://192.168.196.110:3000/api/products"
@@ -31,12 +28,12 @@ const useProducts = () => {
 
   function onCheckChanged(event: React.ChangeEvent<HTMLInputElement>) {
     // if (event.target.checked) {
-    //   const newList = Products.data.filter(
+    //   const newList = Products.products.filter(
     //     (item) => item.type === event.target.name
     //   );
-    //   setDataList(newList);
+    //   setProducts(newList);
     // } else {
-    //   setDataList(Products.data);
+    //   setProducts(Products.products);
     // }
   }
 
@@ -65,10 +62,7 @@ const useProducts = () => {
   return {
     products: data?.products || [],
     error,
-    filterByName,
-    filterByCategory,
-    filterByprice,
-    orderByprice,
+ 
   };
 };
 
