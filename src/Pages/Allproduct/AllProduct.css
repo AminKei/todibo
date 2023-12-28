@@ -166,4 +166,7 @@
   .dropdown-content {
     background-color: white;
   }
+  .img-product-icon{
+    display: none;
+  }
 }

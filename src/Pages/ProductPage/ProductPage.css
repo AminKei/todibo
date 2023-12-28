@@ -1,4 +1,4 @@
-.root-div-propage {
+.root-iv-propage {
   width: 100vw;
   height: 100%;
 }
@@ -13,6 +13,7 @@
   justify-content: space-around;
   margin-top: 12vh;
 }
+
 .img-product {
   width: 630px;
   height: 600px;

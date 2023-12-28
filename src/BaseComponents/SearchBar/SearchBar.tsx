@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import "./SearchBar.css";
 import { Input } from "../../Components/Input/Input";
 import { Product } from "../../Pages/Allproduct/useProducts";
+import { workerData } from "worker_threads";
+import { Loading } from "../../Components/Loading/Loading";
 
 export interface Data {
   data: Product;
@@ -22,7 +24,6 @@ const SearchBar: React.FC<{ data: Product[] }> = ({ data }): JSX.Element => {
     setWordEntered(searchWord);
 
     const newFilter: Product[] = data.filter(({ name, image }): boolean =>
-      // title.toLowerCase().includes(searchWord),
       name.toLowerCase().includes(searchWord)
     );
 
@@ -40,18 +41,32 @@ const SearchBar: React.FC<{ data: Product[] }> = ({ data }): JSX.Element => {
           placeholder="Enter a Book Name..."
           value={wordEntered}
           onChange={handleFilter}
+          autoFocus={true}
         />
       </div>
-      {filteredData.length !== 0 && (
-        <div className="root-Searchbar">
-          <div style={{ width: "100%", display: "grid" }}>
-            {filteredData.map(({ name }, key) => (
-              <div className="div-item">
-                <p style={{ fontSize: "15px", padding: "10px" }}>{name}</p>
+      {filteredData.length !== 0 ? (
+        <div>
+          {filteredData.length !== 0 && (
+            <div className="root-Searchbar">
+              <div style={{ width: "100%", display: "grid" }}>
+                {filteredData.map(({ name, id }, key) => (
+                  <div className="div-item">
+                    <p
+                      style={{ fontSize: "15px", padding: "10px" }}
+                      onClick={() =>
+                        (document.location = `/ProductPage?id=${id}`)
+                      }
+                    >
+                      {name}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </div>
+      ) : (
+        <Loading />
       )}
     </div>
   );

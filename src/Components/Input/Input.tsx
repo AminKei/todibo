@@ -9,11 +9,12 @@ interface PropsInput {
   className?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string;
-  ref?:string
+  ref?:string;
+  autoFocus?:boolean
 }
 
 export const Input: React.FC<PropsInput> = (props) => {
-  const { children, heigth, width, onChange, value , ref} = props;
+  const { children, heigth, width, onChange, value , ref, autoFocus} = props;
 
   return (
     <>
@@ -31,6 +32,7 @@ export const Input: React.FC<PropsInput> = (props) => {
           value={value}
           width={width}
           ref={ref}
+          autoFocus={autoFocus}
         />
       </div>
     </>

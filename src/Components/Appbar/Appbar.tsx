@@ -6,6 +6,7 @@ import { SearchBar } from "../../BaseComponents/SearchBar/SearchBar";
 import BookData from "../../BaseComponents/SearchBar/Data.json";
 import useProducts, { ProductList } from "../../Pages/Allproduct/useProducts";
 import { HamburgerLine } from "../../BaseComponents/HamburgerLine/HamburgerLine";
+import { MenuItem } from "../../BaseComponents/MenuItem/MenuItem";
 let cartIcon =
   "https://icons.veryicon.com/png/o/miscellaneous/unicons/shopping-basket-16.png";
 
@@ -56,12 +57,13 @@ const AppBar = () => {
               </div>
 
               <div className="menu-items2">
-                <li>
-                  <a href="#Featured">Featured Products</a>
-                </li>
                 <li onClick={() => (document.location = "/AllProduct")}>
                   <a href="#">Products</a>
                 </li>
+                <li>
+                  <a href="#Featured">Featured Products</a>
+                </li>
+
                 <li>
                   <a href="#Element">Elements</a>
                 </li>
@@ -69,7 +71,12 @@ const AppBar = () => {
                   <a href="#about">About Us</a>
                 </li>
               </div>
-              <Button width={60} margin="0px -0px" bgColor="#fff" border="none">
+              <Button
+                width={60}
+                margin="0px -20px -6px 0px"
+                bgColor="#fff"
+                border="none"
+              >
                 <Popup
                   bgColor="#fff"
                   width={750}
@@ -102,7 +109,7 @@ const AppBar = () => {
                   className="button-account"
                   onClick={() => (document.location = "/Login")}
                 >
-                  Account
+                  Login / Sign Up
                 </Button>
               </div>
             </div>
@@ -131,32 +138,7 @@ const AppBar = () => {
               </div>
             </div>
 
-            <div className="menu-items">
-              <li>
-                <a href="#">Mens</a>
-              </li>
-              <li>
-                <a href="#">Women</a>
-              </li>
-              <li>
-                <a href="#">Kids</a>
-              </li>
-              <li>
-                <a href="#">Acsecory</a>
-              </li>
-              <li>
-                <a href="#">Shose</a>
-              </li>
-              <li>
-                <a href="#">Kapus</a>
-              </li>
-              <li>
-                <a href="#">Accesory manlidona</a>
-              </li>
-              <li>
-                <a href="#">Multipel shipinined</a>
-              </li>
-            </div>
+            <MenuItem />
           </div>
         </div>
       </nav>
