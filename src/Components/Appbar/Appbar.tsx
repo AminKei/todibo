@@ -65,7 +65,7 @@ const AppBar = () => {
                 </li>
 
                 <li>
-                  <a href="#Element">Elements</a>
+                  <a href="#Brands">Brands</a>
                 </li>
                 <li>
                   <a href="#about">About Us</a>
@@ -109,7 +109,7 @@ const AppBar = () => {
                   className="button-account"
                   onClick={() => (document.location = "/Login")}
                 >
-                  Login / Sign Up
+                  Login | Sign Up
                 </Button>
               </div>
             </div>

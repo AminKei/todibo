@@ -1,15 +1,13 @@
-import { useState } from "react";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Footer } from "../../Components/Footer/Footer";
-import { Loading } from "../../Components/Loading/Loading";
 import { Pagination } from "../../Components/Pagination/Pagination";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import "./AllProduct.css";
 import useProducts, { ProductList } from "./useProducts";
 
 const AllProduct = () => {
-  const { data, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits } = useProducts<ProductList>();
-   
+  const { data, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits } =
+    useProducts<ProductList>();
 
   return (
     <>
@@ -60,45 +58,42 @@ const AllProduct = () => {
               </div>
             </div>
           </div>
+
         </div>
-
-        {data?.products.length !== 0 ? (
-          <div className="root-allproduct-list">
-            {data?.products.map((item, index) => {
-              return (
+        
+        <div className="root-allproduct-list">
+          {data?.products.map((item, index) => {
+            return (
+              <div
+                className="item-allpro"
+                onClick={() =>
+                  (document.location = `/ProductPage?id=${item.id}`)
+                }
+              >
+                <img
+                  src={item.image[0]}
+                  className="item-img-pro"
+                  alt="product"
+                />
                 <div
-                  className="item-allpro"
-                  onClick={() =>
-                    (document.location = `/ProductPage?id=${item.id}`)
-                  }
+                  style={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <img
-                    src={item.image[0]}
-                    className="item-img-pro"
-                    alt="product"
-                  />
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <div>
-                      <p> {item.name}</p>
-                      <h2> ${item.price}</h2>
-                    </div>
-
-                    <img
-                      src="/Assets/Images/empty-cart.gif"
-                      width={58}
-                      style={{ marginRight: "-8vh" }}
-                      className="img-product-icon"
-                    />
+                  <div>
+                    <p> {item.name}</p>
+                    <h2> ${item.price}</h2>
                   </div>
+
+                  <img
+                    src="/Assets/Images/empty-cart.gif"
+                    width={58}
+                    style={{ marginRight: "-8vh" }}
+                    className="img-product-icon"
+                  />
                 </div>
-              );
-            })}
-          </div>
-        ) : (
-          <Loading />
-        )}
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <Pagination />

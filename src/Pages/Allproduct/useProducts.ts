@@ -13,7 +13,7 @@ export type Product = {
   price: number;
   DataList: string;
   type: string;
-  NumberVisits:number,
+  NumberVisits: number;
 };
 
 export interface ProductList {
@@ -38,9 +38,10 @@ const useProducts = <T>(id?: string | null) => {
       (data as ProductList).products.sort((a, b) => a.price - b.price) as T;
     } else if (sort === 2) {
       (data as ProductList).products.sort((a, b) => b.price - a.price) as T;
-    }
-    else if (sort === 3) {
-      (data as ProductList).products.sort((a, b) => a.NumberVisits - b.NumberVisits) as T
+    } else if (sort === 3) {
+      (data as ProductList).products.sort(
+        (a, b) => a.NumberVisits - b.NumberVisits
+      ) as T;
     }
     return data;
   }, [sort, data]);
@@ -54,7 +55,7 @@ const useProducts = <T>(id?: string | null) => {
   }
 
   function sort_by_NumberVisits() {
-    changeSort(3)
+    changeSort(3);
   }
 
   return {
@@ -63,7 +64,7 @@ const useProducts = <T>(id?: string | null) => {
     loading,
     sort_by_expensive,
     sort_by_chipper,
-    sort_by_NumberVisits
+    sort_by_NumberVisits,
   };
 };
 
