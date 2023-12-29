@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Footer } from "../../Components/Footer/Footer";
 import { Loading } from "../../Components/Loading/Loading";
@@ -7,7 +8,8 @@ import "./AllProduct.css";
 import useProducts, { ProductList } from "./useProducts";
 
 const AllProduct = () => {
-  const { data } = useProducts<ProductList>();
+  const { data, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits } = useProducts<ProductList>();
+   
 
   return (
     <>
@@ -50,9 +52,9 @@ const AllProduct = () => {
               <div className="dropdown">
                 <p className="dropbtn">Sort By : </p>
                 <div className="dropdown-content">
-                  <h3>Expensive</h3>
-                  <h3>Chiper</h3>
-                  <h3>More see</h3>
+                  <h3 onClick={sort_by_expensive}>Expensive</h3>
+                  <h3 onClick={sort_by_chipper}>Chiper</h3>
+                  <h3 onClick={sort_by_NumberVisits}>More see</h3>
                   <h3>News</h3>
                 </div>
               </div>
@@ -96,7 +98,7 @@ const AllProduct = () => {
           </div>
         ) : (
           <Loading />
-          )}
+        )}
       </div>
 
       <Pagination />
