@@ -10,6 +10,7 @@ const useFetch = <T>(url: string, config?: AxiosRequestConfig) => {
   const [data, setData] = useState<Data<T>>(null);
   const [error, setError] = useState<Error | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  
 
   // Use effect hook to fetch data when the URL or config changes
   useEffect(() => {

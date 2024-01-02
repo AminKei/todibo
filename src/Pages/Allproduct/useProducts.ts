@@ -25,15 +25,20 @@ export interface ProductItem {
 }
 
 const useProducts = <T>(id?: string | null) => {
+
+  
   const url = id
     ? `${base_url}/api/product?id=${id}`
     : `${base_url}/api/products`;
 
   const { data, error, loading } = useFetch<T>(url);
 
+  /* sort : */
+
   const [sort, changeSort] = useState(0);
 
   const products = useMemo(() => {
+
     if (sort === 1) {
       (data as ProductList).products.sort((a, b) => a.price - b.price) as T;
     } else if (sort === 2) {
@@ -57,6 +62,11 @@ const useProducts = <T>(id?: string | null) => {
   function sort_by_NumberVisits() {
     changeSort(3);
   }
+
+
+
+  /* return : */
+
 
   return {
     data: products,

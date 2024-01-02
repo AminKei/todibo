@@ -17,6 +17,7 @@ const AllProduct = () => {
         <div className="div-root-filter">
           <div className="dropdown">
             <p className="div-filter">Filter By: </p>
+            
             <div className="dropdown-content">
               <a href="#">
                 {" "}
@@ -46,15 +47,13 @@ const AllProduct = () => {
           </div>
 
           <div className="div-sort">
-            <div className="">
               <div className="dropdown">
                 <p className="dropbtn">Sort By : </p>
-                <div className="dropdown-content">
+                <div className="dropdown-content" >
                   <h3 onClick={sort_by_expensive}>Expensive</h3>
                   <h3 onClick={sort_by_chipper}>Chiper</h3>
                   <h3 onClick={sort_by_NumberVisits}>More see</h3>
                   <h3>News</h3>
-                </div>
               </div>
             </div>
           </div>
