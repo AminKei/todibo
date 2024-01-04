@@ -18,33 +18,74 @@ const AllProduct = () => {
           <div className="dropdown">
             <p className="div-filter">Filter By: </p>
             
-            <div className="dropdown-content">
-              <a href="#">
-                {" "}
-                <label htmlFor="">Tops</label>
-                <input type="checkbox" name="tops" onChange={undefined} />
-              </a>
-              <a href="#">
-                <label htmlFor="">T shert</label>
-                <input type="checkbox" name="tshert" onChange={undefined} />
-              </a>
-              <a href="#">
-                <label htmlFor="">Shose</label>
-                <input type="checkbox" name="shose" onChange={undefined} />
-              </a>
-              <a href="#">
-                <label htmlFor="">Price Filter</label>
-                <input type="checkbox" onChange={undefined} />
-              </a>
-              <a href="#">
-                <label>Size :</label>
-                <label htmlFor="L">L</label>
-                <input type="checkbox" name="L" onChange={undefined} />
-                <label htmlFor="XL">XL</label>
-                <input type="checkbox" name="XL" onChange={undefined} />
-              </a>
+
+
+            <div className="dropdown-content" style={{padding:'20px'}}>
+      
+
+              <label htmlFor="">Filter by Buciul :</label>
+            <div className="radio-buttons">
+              <label className="radio-button">
+                <input type="radio" name="option" value="option1"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">Male</span>
+              </label>
+              <label className="radio-button">
+                <input type="radio" name="option" value="option2"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">Famle</span>
+              </label>
+              <label className="radio-button">
+                <input type="radio" name="option" value="option3"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">Kids</span>
+              </label>
             </div>
+
+            <hr/>
+
+            <label htmlFor="">Filter by Size :</label>
+            <div className="radio-buttons">
+              <label className="radio-button">
+                <input type="radio" name="option" value="option1"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">M</span>
+              </label>
+              <label className="radio-button">
+                <input type="radio" name="option" value="option2"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">XL</span>
+              </label>
+              <label className="radio-button">
+                <input type="radio" name="option" value="option3"/>
+                <div  className="radio-circle"></div>
+                <span className="radio-label">XXL</span>
+              </label>
+            </div>
+
+            <hr />
+
+            <label htmlFor="">Filter by Price :</label>
+            <div className="radio-buttons">
+             <input type="range"  className="slider" id="myRange"/>
+                <div style={{display:'flex', justifyContent:'space-between', marginTop:'2vh'}}>
+
+                <h5>&50/000.00</h5>
+                <h5>&0.00</h5>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
           </div>
+
+
+          
 
           <div className="div-sort">
               <div className="dropdown">
