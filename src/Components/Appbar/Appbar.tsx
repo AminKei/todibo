@@ -39,14 +39,15 @@ const AppBar = () => {
                   gap: "210px",
                 }}
               >
+                
                 <h1 onClick={() => (document.location = "/")}>Todibo</h1>
-                <div>
+                <div >
                   <Popup
                     bgColor="#fff"
                     width={350}
                     height="540px"
                     padding="30px"
-                    justifyContent="stretch"
+                    // justifyContent=""
                     display="grid"
                     radius="10px"
                     className="popup1"
@@ -79,6 +80,7 @@ const AppBar = () => {
               >
                 <Popup
                   bgColor="#fff"
+                  
                   width={750}
                   height="70%"
                   padding="30px"

@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 
 
+type Position = "absolute" | "relative"
+
 interface ButtonProps {
     children: React.ReactNode;
     bgColor?: string;
@@ -13,13 +15,15 @@ interface ButtonProps {
     border?:string;
     width?:number;
     height?:number;
-    className?:string
+    className?:string;
+    bottom?:number;
+    position?:Position;
 }
 
 
 export const Button: FC<ButtonProps> = (props) => {
 
-    const {children, onClick, bgColor, color, fontSize,  margin,  padding, radius, border, height, width, className} = props;
+    const {children, onClick, bgColor, color, fontSize,  margin,  padding, radius, border, height, width, className, position, bottom} = props;
 
     return ( 
         <button 
@@ -34,6 +38,8 @@ export const Button: FC<ButtonProps> = (props) => {
                 fontSize:fontSize,
                 cursor:'pointer',
                 margin:margin,
+                bottom:bottom,
+                position:position
             }}
             onClick={onClick}
             className={className}
