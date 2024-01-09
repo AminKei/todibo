@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
 import useFetch from "../../Hooks/fetch/useFetch";
 import { base_url } from "../../constants";
+ 
+ type Category = "Dress" | "Shoes" | "Accessory";
 
-type Category = "Dress" | "Shoes" | "Accessory";
+ export type Gender = "Man" | "Woman" | "Kids" ;
 
 export type Product = {
   id: string;
@@ -24,7 +26,15 @@ export interface ProductItem {
   product: Product;
 }
 
+
+
+
 const useProducts = <T>(id?: string | null) => {
+
+
+
+
+  const [gender, setGender] = useState<Gender>("Man");
 
   
   const url = id
@@ -39,6 +49,8 @@ const useProducts = <T>(id?: string | null) => {
 
   const products = useMemo(() => {
 
+
+
     if (sort === 1) {
       (data as ProductList).products.sort((a, b) => a.price - b.price) as T;
     } else if (sort === 2) {
@@ -49,7 +61,7 @@ const useProducts = <T>(id?: string | null) => {
       ) as T;
     }
     return data;
-  }, [sort, data]);
+  }, [sort, data, gender]);
 
   function sort_by_expensive() {
     changeSort(2);
@@ -64,17 +76,37 @@ const useProducts = <T>(id?: string | null) => {
   }
 
 
+  /* filter:  */
+
+  function filter_by_gender(event: React.ChangeEvent<HTMLInputElement>) {
+    console.log(event.target.value)
+
+    setGender(event.target.value as Gender)
+
+    // if (event.target.checked) {
+    //   const newList = Products.products.filter(
+    //     (item) => item.type === event.target.name
+    //   );
+    //   setProducts(newList);
+    // } else {
+    //   setProducts(Products.products);
+    // }
+
+  }
+
 
   /* return : */
 
 
   return {
+    gender,
     data: products,
     error,
     loading,
     sort_by_expensive,
     sort_by_chipper,
     sort_by_NumberVisits,
+    filter_by_gender
   };
 };
 

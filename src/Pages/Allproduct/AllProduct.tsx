@@ -1,13 +1,22 @@
+import { useState } from "react";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Footer } from "../../Components/Footer/Footer";
 import { Pagination } from "../../Components/Pagination/Pagination";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import "./AllProduct.css";
-import useProducts, { ProductList } from "./useProducts";
+import useProducts, { ProductList} from "./useProducts";
+
+
+
 
 const AllProduct = () => {
-  const { data, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits } =
+
+  const { data, gender, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits, filter_by_gender } =
     useProducts<ProductList>();
+
+
+
+  
 
   return (
     <>
@@ -23,20 +32,20 @@ const AllProduct = () => {
             <div className="dropdown-content" style={{padding:'20px'}}>
       
 
-              <label htmlFor="">Filter by Buciul :</label>
+              <label htmlFor="">Filter by Gender :</label>
             <div className="radio-buttons">
               <label className="radio-button">
-                <input type="radio" name="option" value="option1"/>
+                <input type="radio" name="Man" value={"Man"} checked={gender === "Man"} onChange={filter_by_gender}/>
                 <div  className="radio-circle"></div>
-                <span className="radio-label">Male</span>
+                <span className="radio-label">Man</span>
               </label>
               <label className="radio-button">
-                <input type="radio" name="option" value="option2"/>
+                <input type="radio" name="Woman" value={"Woman"} checked={gender === "Woman"} onChange={filter_by_gender}/>
                 <div  className="radio-circle"></div>
-                <span className="radio-label">Famle</span>
+                <span className="radio-label">Woman</span>
               </label>
               <label className="radio-button">
-                <input type="radio" name="option" value="option3"/>
+                <input type="radio" name="Kids" value={"Kids"} checked={gender === "Kids"} onChange={filter_by_gender}/>
                 <div  className="radio-circle"></div>
                 <span className="radio-label">Kids</span>
               </label>
@@ -67,15 +76,14 @@ const AllProduct = () => {
 
             <label htmlFor="">Filter by Price :</label>
             <div className="radio-buttons">
-             <input type="range"  className="slider" id="myRange"/>
+             <input type="range"  className="slider" id="myRange" />
                 <div style={{display:'flex', justifyContent:'space-between', marginTop:'2vh'}}>
 
-                <h5>&50/000.00</h5>
-                <h5>&0.00</h5>
+                <h5>& 50/000.00</h5>
+                <h5>& 20.00</h5>
                 </div>
             </div>
             </div>
-
 
 
 

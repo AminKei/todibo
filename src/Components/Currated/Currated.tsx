@@ -8,6 +8,8 @@ let currtedImg1 = "https://dayanshop.com/blog/wp-content/uploads/2022/10/best-bl
 let currtedImg3 = "https://cdn.nody.ir/files/2021/09/09/nody-%DA%98%D8%B3%D8%AA-%D8%B9%DA%A9%D8%B3-%D8%B3%DB%8C%D8%A7%D9%87-%D8%B3%D9%81%DB%8C%D8%AF-%D8%AF%D8%AE%D8%AA%D8%B1%D8%A7%D9%86%D9%87-1631212883.jpg  "
 
 
+
+
 const Currated = () => {
   return (
     <div className="root-div-Currated">

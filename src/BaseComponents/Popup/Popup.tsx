@@ -4,7 +4,7 @@ import "./Popup.css";
 
 interface PopupProps {
   content?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   height?: string;
   width?: number;
   bgColor?: string;

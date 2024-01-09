@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import useProducts, { ProductItem } from "../Allproduct/useProducts";
 import "./ProductPage.css";
 import AppBar from "../../Components/Appbar/Appbar";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Button } from "../../Components/Button/Button";
 import { Loading } from "../../Components/Loading/Loading";
 import Datalist from "../../Components/Datalist/Datalist";
@@ -13,6 +13,9 @@ import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts
 import Limited from "../../Components/Limited/Limited";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
+import { Popup } from "../../BaseComponents/Popup/Popup";
+
+
 const ProductPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -23,6 +26,20 @@ const ProductPage = () => {
   const selectedProduct = useMemo(() => {
     return data?.product;
   }, [data]);
+
+
+
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleAlertClose = () => {
+    setShowAlert(false);
+  };
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+  };
+
+
 
   return (
     <>
@@ -55,8 +72,8 @@ const ProductPage = () => {
                 <div className="item-color2"></div>
                 <div className="item-color3"></div>
               </div>
-
               <Button
+               onClick={handleButtonClick}
                 bgColor="#252525"
                 border="white solid 1px "
                 color="white"
@@ -65,6 +82,7 @@ const ProductPage = () => {
                 className="btn-propage"
               >
                 Add To Cart
+          
               </Button>
             </div>
           </div>

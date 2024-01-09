@@ -28,14 +28,7 @@ const useProducts = () => {
 
 
   function onCheckChanged(event: React.ChangeEvent<HTMLInputElement>) {
-    // if (event.target.checked) {
-    //   const newList = Products.products.filter(
-    //     (item) => item.type === event.target.name
-    //   );
-    //   setProducts(newList);
-    // } else {
-    //   setProducts(Products.products);
-    // }
+
   }
 
   /* filter by size */
