@@ -4,19 +4,17 @@ import { Footer } from "../../Components/Footer/Footer";
 import { Pagination } from "../../Components/Pagination/Pagination";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import "./AllProduct.css";
-import useProducts, { ProductList} from "./useProducts";
-
-
-
+import useProducts, { ProductList } from "./useProducts";
 
 const AllProduct = () => {
-
-  const { data, gender, sort_by_chipper, sort_by_expensive, sort_by_NumberVisits, filter_by_gender } =
-    useProducts<ProductList>();
-
-
-
-  
+  const {
+    data,
+    gender,
+    sort_by_chipper,
+    sort_by_expensive,
+    sort_by_NumberVisits,
+    filter_by_gender,
+  } = useProducts<ProductList>();
 
   return (
     <>
@@ -26,89 +24,109 @@ const AllProduct = () => {
         <div className="div-root-filter">
           <div className="dropdown">
             <p className="div-filter">Filter By: </p>
-            
 
-
-            <div className="dropdown-content" style={{padding:'20px'}}>
-      
-
+            <div className="dropdown-content" style={{ padding: "20px" }}>
               <label htmlFor="">Filter by Gender :</label>
-            <div className="radio-buttons">
-              <label className="radio-button">
-                <input type="radio" name="Man" value={"Man"} checked={gender === "Man"} onChange={filter_by_gender}/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">Man</span>
-              </label>
-              <label className="radio-button">
-                <input type="radio" name="Woman" value={"Woman"} checked={gender === "Woman"} onChange={filter_by_gender}/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">Woman</span>
-              </label>
-              <label className="radio-button">
-                <input type="radio" name="Kids" value={"Kids"} checked={gender === "Kids"} onChange={filter_by_gender}/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">Kids</span>
-              </label>
-            </div>
+              <div className="radio-buttons">
+                <label className="radio-button">
+                  <input
+                    type="radio"
+                    name="Man"
+                    value={"Man"}
+                    checked={gender === "Man"}
+                    onChange={filter_by_gender}
+                  />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">Man</span>
+                </label>
+                <label className="radio-button">
+                  <input
+                    type="radio"
+                    name="Woman"
+                    value={"Woman"}
+                    checked={gender === "Woman"}
+                    onChange={filter_by_gender}
+                  />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">Woman</span>
+                </label>
+                <label className="radio-button">
+                  <input
+                    type="radio"
+                    name="Kids"
+                    value={"Kids"}
+                    checked={gender === "Kids"}
+                    onChange={filter_by_gender}
+                  />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">Kids</span>
+                </label>
+              </div>
 
-            <hr/>
+              <hr />
 
-            <label htmlFor="">Filter by Size :</label>
-            <div className="radio-buttons">
-              <label className="radio-button">
-                <input type="radio" name="option" value="option1"/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">M</span>
-              </label>
-              <label className="radio-button">
-                <input type="radio" name="option" value="option2"/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">XL</span>
-              </label>
-              <label className="radio-button">
-                <input type="radio" name="option" value="option3"/>
-                <div  className="radio-circle"></div>
-                <span className="radio-label">XXL</span>
-              </label>
-            </div>
+              <label htmlFor="">Filter by Size :</label>
+              <div className="radio-buttons">
+                <label className="radio-button">
+                  <input type="radio" name="option" value="option1" />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">M</span>
+                </label>
+                <label className="radio-button">
+                  <input type="radio" name="option" value="option2" />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">XL</span>
+                </label>
+                <label className="radio-button">
+                  <input type="radio" name="option" value="option3" />
+                  <div className="radio-circle"></div>
+                  <span className="radio-label">XXL</span>
+                </label>
+              </div>
 
-            <hr />
+              <hr />
 
-            <label htmlFor="">Filter by Price :</label>
-            <div className="radio-buttons">
-             <input type="range"  className="slider" id="myRange" />
-                <div style={{display:'flex', justifyContent:'space-between', marginTop:'2vh'}}>
-
-                <h5>& 50/000.00</h5>
-                <h5>& 20.00</h5>
+              <label htmlFor="">Filter by Price :</label>
+              <div className="radio-buttons">
+                <input type="range" className="slider" id="myRange" />
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginTop: "2vh",
+                  }}
+                >
+                  <h5>& 50/000.00</h5>
+                  <h5>& 20.00</h5>
                 </div>
-            </div>
-            </div>
-
-
-
-
-
-
-          </div>
-
-
-          
-
-          <div className="div-sort">
-              <div className="dropdown">
-                <p className="dropbtn">Sort By : </p>
-                <div className="dropdown-content" >
-                  <h3 onClick={sort_by_expensive}>Expensive</h3>
-                  <h3 onClick={sort_by_chipper}>Chiper</h3>
-                  <h3 onClick={sort_by_NumberVisits}>More see</h3>
-                  <h3>News</h3>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "110px",
+                  marginTop: "3vh",
+                }}
+              >
+                <label>Only Available Products</label>
+                <input type="checkbox" />
               </div>
             </div>
           </div>
 
+          <div className="div-sort">
+            <div className="dropdown">
+              <p className="dropbtn">Sort By : </p>
+              <div className="dropdown-content" style={{ width: "340px" }}>
+                <h3 onClick={sort_by_expensive}>Expensive</h3>
+                <h3 onClick={sort_by_chipper}>Chiper</h3>
+                <h3 onClick={sort_by_NumberVisits}>More see</h3>
+                <h3 onClick={undefined}>Most relevant</h3>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
         <div className="root-allproduct-list">
           {data?.products.map((item, index) => {
             return (

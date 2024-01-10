@@ -61,6 +61,7 @@ const useProducts = <T>(id?: string | null) => {
       ) as T;
     }
     return data;
+    
   }, [sort, data, gender]);
 
   function sort_by_expensive() {
@@ -106,7 +107,7 @@ const useProducts = <T>(id?: string | null) => {
     sort_by_expensive,
     sort_by_chipper,
     sort_by_NumberVisits,
-    filter_by_gender
+    filter_by_gender,
   };
 };
 
