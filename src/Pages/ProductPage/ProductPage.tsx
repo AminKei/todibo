@@ -1,6 +1,6 @@
 import "react-medium-image-zoom/dist/styles.css";
 import { useSearchParams } from "react-router-dom";
-import useProducts, { ProductItem } from "../Allproduct/useProducts";
+import useProducts, { ProductItem } from "../../Hooks/products/useProducts";
 import "./ProductPage.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import { useMemo, useState } from "react";
@@ -57,7 +57,7 @@ const ProductPage = () => {
                 <br />
               </h2>
               <h1>${selectedProduct.price}</h1>
-              <hr />
+              <hr/>
               <p>Save 50% right now 🔥</p>
               <p>Features:</p>
               <ul className="option-product">
@@ -65,13 +65,7 @@ const ProductPage = () => {
                 <li>{selectedProduct.attributes[1]}</li>
                 <li>{selectedProduct.attributes[2]}</li>
               </ul>
-              <h3>Size : {selectedProduct?.id}</h3>
-              <p>Colors:</p>
-              <div className="div-colors">
-                <div className="item-color1"></div>
-                <div className="item-color2"></div>
-                <div className="item-color3"></div>
-              </div>
+              <h3>Size : {selectedProduct?.Size}</h3>
               <Button
                onClick={handleButtonClick}
                 bgColor="#252525"

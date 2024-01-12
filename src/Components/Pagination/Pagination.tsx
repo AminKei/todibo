@@ -9,19 +9,19 @@ export const Pagination = () => {
             Previe
           </a>
           <a className="item-pagination" href="#">
+            1
+          </a>
+          <a className="item-pagination" href="#">
             2
           </a>
           <a className="item-pagination" href="#">
             3
           </a>
           <a className="item-pagination" href="#">
-            ..
+            4
           </a>
           <a className="item-pagination" href="#">
-            9
-          </a>
-          <a className="item-pagination" href="#">
-            10
+            5
           </a>
           <a className="item-pagination" href="#">
             Next

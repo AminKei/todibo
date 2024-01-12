@@ -4,16 +4,20 @@ import { Footer } from "../../Components/Footer/Footer";
 import { Pagination } from "../../Components/Pagination/Pagination";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import "./AllProduct.css";
-import useProducts, { ProductList } from "./useProducts";
+import useProducts, { ProductList } from "../../Hooks/products/useProducts";
 
 const AllProduct = () => {
   const {
     data,
     gender,
+    size,
+    filters,
     sort_by_chipper,
     sort_by_expensive,
     sort_by_NumberVisits,
     filter_by_gender,
+    filter_by_Size,
+    onPriceChanged,
   } = useProducts<ProductList>();
 
   return (
@@ -24,7 +28,6 @@ const AllProduct = () => {
         <div className="div-root-filter">
           <div className="dropdown">
             <p className="div-filter">Filter By: </p>
-
             <div className="dropdown-content" style={{ padding: "20px" }}>
               <label htmlFor="">Filter by Gender :</label>
               <div className="radio-buttons">
@@ -68,17 +71,35 @@ const AllProduct = () => {
               <label htmlFor="">Filter by Size :</label>
               <div className="radio-buttons">
                 <label className="radio-button">
-                  <input type="radio" name="option" value="option1" />
+                  <input
+                    type="radio"
+                    name="M"
+                    value={"M"}
+                    checked={size === "M"}
+                    onChange={filter_by_Size}
+                  />
                   <div className="radio-circle"></div>
                   <span className="radio-label">M</span>
                 </label>
                 <label className="radio-button">
-                  <input type="radio" name="option" value="option2" />
+                  <input
+                    type="radio"
+                    name="XL"
+                    value={"XL"}
+                    checked={size === "XL"}
+                    onChange={filter_by_Size}
+                  />
                   <div className="radio-circle"></div>
                   <span className="radio-label">XL</span>
                 </label>
                 <label className="radio-button">
-                  <input type="radio" name="option" value="option3" />
+                  <input
+                    type="radio"
+                    name="XXL"
+                    value={"XXL"}
+                    checked={size === "XXL"}
+                    onChange={filter_by_Size}
+                  />
                   <div className="radio-circle"></div>
                   <span className="radio-label">XXL</span>
                 </label>
@@ -88,7 +109,12 @@ const AllProduct = () => {
 
               <label htmlFor="">Filter by Price :</label>
               <div className="radio-buttons">
-                <input type="range" className="slider" id="myRange" />
+                <input
+                  type="range"
+                  className="slider"
+                  id="myRange"
+                  onChange={onPriceChanged}
+                />
                 <div
                   style={{
                     display: "flex",
@@ -111,7 +137,17 @@ const AllProduct = () => {
                 <label>Only Available Products</label>
                 <input type="checkbox" />
               </div>
+              <a href="#" style={{ marginTop: "2vh" }}>
+                <p>Reset All Filters</p>
+              </a>
             </div>
+          </div>
+
+          <div style={{ display: "flex", gap: "20px", float: "left" }}>
+            <p>Filters applied:</p>
+            {filters.map((filter) => (
+              <h3 key={filter}>{filter}</h3>
+            ))}
           </div>
 
           <div className="div-sort">

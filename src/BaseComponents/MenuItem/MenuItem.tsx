@@ -3,22 +3,22 @@ export const MenuItem = () => {
   return (
     <div className="menu-items">
       <li onClick={() => (document.location = "/AllProduct")}>
-        <a href="#">Mens</a>
+        <a href="#">Jacket</a>
       </li>
       <li onClick={() => (document.location = "/AllProduct")}>
-        <a href="#">Women</a>
+        <a href="#">T-Sherts</a>
       </li>
       <li>
-        <a href="#">Kids</a>
+        <a href="#">Pants</a>
       </li>
       <li>
-        <a href="#">Acsecory</a>
+        <a href="#">Manto</a>
       </li>
       <li>
         <a href="#">Shose</a>
       </li>
       <li>
-        <a href="#">About Us</a>
+        <a href="#">Acsecory</a>
       </li>
     </div>
   );

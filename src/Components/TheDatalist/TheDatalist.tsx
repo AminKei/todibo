@@ -3,7 +3,7 @@ import "./TheDatalist.css";
 import MoreBuyProduct from "../../Api/Products.json";
 import { useSearchParams } from "react-router-dom";
 import { Loading } from "../Loading/Loading";
-import useProducts, { ProductItem } from "../../Pages/Allproduct/useProducts";
+import useProducts, { ProductItem } from "../../Hooks/products/useProducts";
 
 const TheDatalist = () => {
   const [searchParams, setSearchParams] = useSearchParams();

@@ -4,7 +4,7 @@ import { Button } from "../Button/Button";
 import { Popup } from "../../BaseComponents/Popup/Popup";
 import { SearchBar } from "../../BaseComponents/SearchBar/SearchBar";
 import BookData from "../../BaseComponents/SearchBar/Data.json";
-import useProducts, { ProductList } from "../../Pages/Allproduct/useProducts";
+import useProducts, { ProductList } from "../../Hooks/products/useProducts";
 import { HamburgerLine } from "../../BaseComponents/HamburgerLine/HamburgerLine";
 import { MenuItem } from "../../BaseComponents/MenuItem/MenuItem";
 let cartIcon =
@@ -99,7 +99,7 @@ const AppBar = () => {
                   onClick={() => (document.location = "/Cart")}
                 >
                   <img src={cartIcon} className="icon-cart" />
-                  <h2 className="number">5</h2>
+                  <h2 className="number">{0}</h2>
                 </button>
                 <Button
                   bgColor="#252525"

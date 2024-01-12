@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FeaturedProducts.css";
-import useProducts, { ProductList } from "../../Pages/Allproduct/useProducts";
+import useProducts, { ProductList } from "../../Hooks/products/useProducts";
 import { Loading } from "../Loading/Loading";
 
 let cartIcon =
