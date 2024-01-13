@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <h6>About Us</h6>
             <p className="text-justify">
-              Hi our name is Todibo Group <i>CODE WANTS TO BE SIMPLE </i> is an
+              Hi our team name is Todibo Group <i>CODE WANTS TO BE SIMPLE </i> is an
               initiative to help the upcoming programmers with the code.
               Scanfcode focuses on providing the most efficient code or snippets
               as the code wants to be simple. We will help programmers build up
@@ -53,6 +53,9 @@ export const Footer = () => {
           <div className="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul className="footer-links">
+              <li>
+                <a href="http://scanfcode.com/about/">Menu</a>
+              </li>
               <li>
                 <a href="http://scanfcode.com/about/">Mens</a>
               </li>
