@@ -4,7 +4,7 @@ import useProducts, { ProductItem } from "../../Hooks/products/useProducts";
 import "./ProductPage.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import { useMemo, useState } from "react";
-import { Button } from "../../Components/Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
 import { Loading } from "../../Components/Loading/Loading";
 import Datalist from "../../Components/Datalist/Datalist";
 import TheDatalist from "../../Components/TheDatalist/TheDatalist";
@@ -13,7 +13,7 @@ import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts
 import Limited from "../../Components/Limited/Limited";
 import { Subscribe } from "../../Components/Subscribe/Subscribe";
 import { Footer } from "../../Components/Footer/Footer";
-import { Popup } from "../../BaseComponents/Popup/Popup";
+import { Popup } from "../../Components/Popup/Popup";
 
 
 const ProductPage = () => {

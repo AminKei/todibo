@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 import AppBar from "../../Components/Appbar/Appbar";
 import { Footer } from "../../Components/Footer/Footer";
-import { Button } from "../../Components/Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
 
 let ImageCart =
   "https://contents.mediadecathlon.com/p2436315/e957bd6a23553ffabaef22fd550e99c3/p2436315.jpg";

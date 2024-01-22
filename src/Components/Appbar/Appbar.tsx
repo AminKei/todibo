@@ -1,7 +1,7 @@
 import React from "react";
 import "./Appbar.css";
-import { Button } from "../Button/Button";
-import { Popup } from "../../BaseComponents/Popup/Popup";
+import { Button } from "../../BaseComponents/Button/Button";
+import { Popup } from "../../Components/Popup/Popup";
 import { SearchBar } from "../../BaseComponents/SearchBar/SearchBar";
 import BookData from "../../BaseComponents/SearchBar/Data.json";
 import useProducts, { ProductList } from "../../Hooks/products/useProducts";
@@ -26,8 +26,8 @@ const AppBar = () => {
   const { data } = useProducts<ProductList>();
 
   return (
-    <>
-      <nav>
+    <div >
+      <nav >
         <div className="navbar">
           <div className="container nav-container">
             <HamburgerLine />
@@ -39,9 +39,8 @@ const AppBar = () => {
                   gap: "210px",
                 }}
               >
-                
                 <h1 onClick={() => (document.location = "/")}>Todibo</h1>
-                <div >
+                <div>
                   <Popup
                     bgColor="#fff"
                     width={350}
@@ -80,7 +79,6 @@ const AppBar = () => {
               >
                 <Popup
                   bgColor="#fff"
-                  
                   width={750}
                   height="70%"
                   padding="30px"
@@ -144,7 +142,7 @@ const AppBar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 export default AppBar;

@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./SearchBar.css";
-import { Input } from "../../Components/Input/Input";
+import { Input } from "../../BaseComponents/Input/Input";
 import { Product } from "../../Hooks/products/useProducts";
-import { workerData } from "worker_threads";
 import { Loading } from "../../Components/Loading/Loading";
 
 export interface Data {

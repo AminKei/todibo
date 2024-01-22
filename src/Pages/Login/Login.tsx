@@ -4,7 +4,8 @@ import AppBar from "../../Components/Appbar/Appbar";
 import "./Login.css";
 
 import ImgLogin from "../../Assets/Images/ImgLogin.png";
-import { Button } from "../../Components/Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
+import { Input } from "../../BaseComponents/Input/Input";
 
 const Login = () => {
   return (

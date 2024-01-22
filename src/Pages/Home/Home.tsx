@@ -1,6 +1,6 @@
 import AppBar from "../../Components/Appbar/Appbar";
 import Brands from "../../Components/Brands/Brands";
-import { Button } from "../../Components/Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
 import Currated from "../../Components/Currated/Currated";
 import Experiences from "../../Components/Experiences/Experiences";
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";

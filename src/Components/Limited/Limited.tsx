@@ -1,7 +1,7 @@
 import React from "react";
 import "./Limited.css";
 // import ImgLimited from "../../Assets/Images/limited.png";
-import { Button } from "../Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
 
 
 

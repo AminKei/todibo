@@ -3,9 +3,8 @@ import AppBar from "../../Components/Appbar/Appbar";
 
 import "./SignIn.css";
 
-// import { Input } from "../../Components/Input/Input";
 import imgSignIn from "../../Assets/Images/imgSignIn.png";
-import { Button } from "../../Components/Button/Button";
+import { Button } from "../../BaseComponents/Button/Button";
 
 const SignIn = () => {
   return (
