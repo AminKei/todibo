@@ -7,6 +7,7 @@ import BookData from "../../BaseComponents/SearchBar/Data.json";
 import useProducts, { ProductList } from "../../Hooks/products/useProducts";
 import { HamburgerLine } from "../../BaseComponents/HamburgerLine/HamburgerLine";
 import { MenuItem } from "../../BaseComponents/MenuItem/MenuItem";
+import { Link } from "react-router-dom";
 let cartIcon =
   "https://icons.veryicon.com/png/o/miscellaneous/unicons/shopping-basket-16.png";
 
@@ -26,8 +27,8 @@ const AppBar = () => {
   const { data } = useProducts<ProductList>();
 
   return (
-    <div >
-      <nav >
+    <div>
+      <nav>
         <div className="navbar">
           <div className="container nav-container">
             <HamburgerLine />
@@ -39,7 +40,9 @@ const AppBar = () => {
                   gap: "210px",
                 }}
               >
-                <h1 onClick={() => (document.location = "/")}>Todibo</h1>
+                <Link to={"/"}>
+                  <h1>Todibo</h1>
+                </Link>
                 <div>
                   <Popup
                     bgColor="#fff"
@@ -57,8 +60,8 @@ const AppBar = () => {
               </div>
 
               <div className="menu-items2">
-                <li onClick={() => (document.location = "/AllProduct")}>
-                  <a href="#">Products</a>
+                <li >
+                  <Link to={"/AllProduct"}>Products</Link>
                 </li>
                 <li>
                   <a href="#Featured">Featured Products</a>

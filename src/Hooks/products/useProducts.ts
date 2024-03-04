@@ -31,7 +31,6 @@ export interface ProductItem {
 }
 
 const useProducts = <T>(id?: string | null) => {
-
   const [gender, setGender] = useState<Gender>();
 
   const [size, setSize] = useState<Size>();
@@ -42,37 +41,42 @@ const useProducts = <T>(id?: string | null) => {
     ? `${base_url}/api/product?id=${id}`
     : `${base_url}/api/products`;
 
-    const { data, error, loading } = useFetch<T>(url);
-    
+  const { data, error, loading } = useFetch<T>(url);
 
   const products = useMemo(() => {
-
-    if (id) {return data; }
-      
+    if (id) {
+      return data;
+    }
 
     const productList = structuredClone(data) as ProductList;
 
     /* sort : */
 
-    if      (sort === 1) { productList.products.sort((a, b) => a.price - b.price) as T;}
-    else if (sort === 2) { productList.products.sort((a, b) => b.price - a.price) as T;}
-    else if (sort === 3) { productList.products.sort((a, b) => a.NumberVisits - b.NumberVisits) as T;}
+    if (sort === 1) {
+      productList.products.sort((a, b) => a.price - b.price) as T;
+    } else if (sort === 2) {
+      productList.products.sort((a, b) => b.price - a.price) as T;
+    } else if (sort === 3) {
+      productList.products.sort((a, b) => a.NumberVisits - b.NumberVisits) as T;
+    }
 
-   /* filter : */
+    /* filter : */
 
     const filter1 = productList?.products.filter(
-      (product) => product.Gender === gender);
+      (product) => product.Gender === gender
+    );
 
-    if (filter1 && filter1.length > 0) { const filter2 = filter1.filter((product) => product.Size === size); 
-    if (filter2 && filter2.length > 0) { productList.products = filter2;}
-    else {productList.products = filter1;}
+    if (filter1 && filter1.length > 0) {
+      const filter2 = filter1.filter((product) => product.Size === size);
+      if (filter2 && filter2.length > 0) {
+        productList.products = filter2;
+      } else {
+        productList.products = filter1;
+      }
     }
     return productList;
-
   }, [sort, data, gender, size]) as T;
 
-
-  
   /* functions of sort : */
 
   function sort_by_expensive() {
@@ -97,11 +101,8 @@ const useProducts = <T>(id?: string | null) => {
     setSize(event.target.value as Size);
   }
 
-  function onPriceChanged(event: React.ChangeEvent<HTMLInputElement>) {
-    
-  }
+  function onPriceChanged(event: React.ChangeEvent<HTMLInputElement>) {}
 
-  
   /* return : */
 
   return {
