@@ -17,6 +17,8 @@ import { Popup } from "../../Components/Popup/Popup";
 
 
 const ProductPage = () => {
+
+  
   const [searchParams, setSearchParams] = useSearchParams();
 
   const selectedId = searchParams.get("id");

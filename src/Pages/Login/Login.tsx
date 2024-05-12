@@ -26,7 +26,7 @@ const Login = () => {
           />
           <label>Password:</label>
           <input
-            placeholder="*****************"
+            placeholder="*****************  "
             type="password"
             className="input-regi"
           />
