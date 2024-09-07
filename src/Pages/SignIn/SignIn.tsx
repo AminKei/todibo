@@ -1,16 +1,12 @@
 import React from "react";
-import AppBar from "../../Components/Appbar/Appbar";
 
 import "./SignIn.css";
 
-import imgSignIn from "../../Assets/Images/imgSignIn.png";
 import { Button } from "../../BaseComponents/Button/Button";
 
 const SignIn = () => {
   return (
     <>
-      <AppBar />
-
       <div className="root-div-SignIn">
         <div className="div-filds">
           <h2>SignIn</h2>

@@ -1,17 +1,10 @@
 import React from "react";
-import AppBar from "../../Components/Appbar/Appbar";
-
 import "./Login.css";
-
-import ImgLogin from "../../Assets/Images/ImgLogin.png";
 import { Button } from "../../BaseComponents/Button/Button";
-import { Input } from "../../BaseComponents/Input/Input";
 
 const Login = () => {
   return (
     <>
-      <AppBar />
-
       <div className="root-div-login">
         <div className="div-filds">
           <h2>Login</h2>
